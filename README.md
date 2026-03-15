@@ -134,7 +134,19 @@ Possible future features include:
 
 ---
 
+## Documentation
+
+Project documentation can be found here:
+
+- [System Specification](SPECIFICATION.md)
+- [System Architecture](ARCHITECTURE.md)
+
+---
+
 # 👨‍💻 Author
+
+Thaakirah A  
+Software Development Student
 
 Student Software Engineering Project
 University Assignment
