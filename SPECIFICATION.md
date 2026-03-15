@@ -4,61 +4,160 @@
 
 Movie Rental System
 
-## 2. Domain
+---
 
-Entertainment / Movie Rental Services
+# 2. Domain
 
-The system belongs to the entertainment domain where users can access and rent movies online instead of visiting a physical rental store.
+The Movie Rental System belongs to the **Entertainment and Media domain**.
+It focuses on providing an online platform where users can browse and rent movies digitally.
 
-## 3. Problem Statement
+Traditionally, customers had to visit physical movie rental stores to rent movies. This system provides a modern digital alternative that allows users to access movie rentals from anywhere through a web application.
 
-Traditional movie rental stores are becoming less common, and users need an easy and convenient way to browse and rent movies online. Many people want quick access to movies without physical travel. The Movie Rental System provides a digital solution where users can browse available movies, rent them, and manage their rentals in one platform.
+---
 
-## 4. Individual Scope
+# 3. Problem Statement
 
-This project will be developed as an individual system with the following features:
+Many people want a convenient way to browse and rent movies without visiting physical rental stores. Traditional movie rental businesses require customers to travel to a store, which is inconvenient and time consuming.
 
-* User registration and login
-* Viewing available movies
-* Searching for movies
-* Renting movies
-* Viewing rented movies
-* Administrator adding, updating, or removing movies
+The Movie Rental System solves this problem by providing an online platform where users can:
 
-The system will focus on the core functionality of movie rental and management while keeping the implementation simple and manageable for an individual project.
+* Browse a catalog of available movies
+* Search for specific movies
+* Rent movies online
+* Manage their rental history
 
-## 5. Users of the System
+This system improves accessibility and convenience for users while allowing administrators to manage the movie catalog digitally.
 
-### Customer
+---
 
-* Register and login
-* Browse movies
-* Search movies
+# 4. Individual Scope
+
+This project will be developed as an **individual software system**.
+The focus of the project is to implement the core functionality of a digital movie rental platform.
+
+The system will include the following features:
+
+### User Features
+
+* User registration
+* User login and authentication
+* Browse available movies
+* Search movies by title or genre
+* Rent movies
+* View rented movies
+
+### Administrator Features
+
+* Add new movies to the system
+* Update movie details
+* Remove movies from the catalog
+* Manage movie availability
+
+The scope of this project is limited to the core features of browsing and renting movies to ensure the system is manageable for an individual developer.
+
+---
+
+# 5. Users of the System
+
+## Customer
+
+Customers are the primary users of the system.
+
+They can:
+
+* Create an account
+* Login to the system
+* Browse available movies
+* Search for movies
 * Rent movies
 * View rental history
 
-### Administrator
+## Administrator
+
+Administrators manage the movie catalog and system data.
+
+They can:
 
 * Add new movies
 * Update movie information
-* Remove movies
+* Delete movies
 * Manage movie availability
 
-## 6. Functional Requirements
+---
 
-The system must:
+# 6. Functional Requirements
 
-1. Allow users to create an account.
-2. Allow users to login and logout.
-3. Display a list of available movies.
-4. Allow users to search for movies.
-5. Allow users to rent movies.
-6. Allow users to view rented movies.
-7. Allow administrators to manage the movie catalog.
+The system must provide the following functionality:
 
-## 7. Non-Functional Requirements
+1. The system must allow users to register an account.
+2. The system must allow users to login and logout.
+3. The system must display a list of available movies.
+4. The system must allow users to search for movies.
+5. The system must allow users to rent movies.
+6. The system must store rental information.
+7. The system must allow administrators to add new movies.
+8. The system must allow administrators to update movie details.
+9. The system must allow administrators to remove movies.
 
-* The system should be easy to use.
-* The system should load movie information quickly.
-* The system should securely store user information.
-* The system should be available online.
+---
+
+# 7. Non-Functional Requirements
+
+The system must also satisfy the following non-functional requirements:
+
+### Usability
+
+The system should provide a simple and easy-to-use interface for users.
+
+### Performance
+
+The system should respond quickly to user requests and load movie information efficiently.
+
+### Security
+
+User authentication must be implemented to protect user accounts and system data.
+
+### Availability
+
+The system should be accessible online through a web browser.
+
+---
+
+# 8. Technology Stack
+
+The system will be developed using modern web technologies.
+
+## Frontend
+
+The frontend application will be built using Angular.
+Angular provides a component-based architecture that helps organize the user interface into reusable components.
+
+## Backend
+
+The backend server will be developed using Node.js with Express.js.
+This will handle API requests, business logic, and communication with the database.
+
+## Database
+
+The system will use MongoDB to store application data such as users, movies, and rentals.
+
+The database will be hosted on MongoDB Atlas, a cloud-based database platform that provides secure and scalable data storage.
+
+## Version Control
+
+The project will use Git and GitHub for version control and project management.
+
+---
+
+# 9. System Overview
+
+The Movie Rental System follows a web-based architecture where users interact with a frontend web application.
+
+The system architecture consists of:
+
+* Angular frontend application
+* Node.js backend API
+* MongoDB database hosted on MongoDB Atlas
+
+The frontend communicates with the backend using HTTP requests, and the backend processes the requests and interacts with the database to store and retrieve data.
+
