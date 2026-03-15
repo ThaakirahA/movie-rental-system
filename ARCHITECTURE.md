@@ -140,19 +140,8 @@ The system contains three main containers:
 
 This diagram shows the main components inside the backend API.
 
-C4Component
-title Movie Rental System - Backend Component Diagram
 
-Container(apiServer, "Backend API Server", "Node.js + Express", "Handles API requests")
 
-Component(authController, "Authentication Controller", "Handles login and registration")
-Component(movieController, "Movie Controller", "Manages movie catalog")
-Component(rentalController, "Rental Controller", "Processes movie rentals")
-Component(databaseService, "Database Service", "Communicates with MongoDB")
-
-Rel(authController, databaseService, "Stores/Retrieves user data")
-Rel(movieController, databaseService, "Stores/Retrieves movie data")
-Rel(rentalController, databaseService, "Stores/Retrieves rental data") 
 ### Explanation
 
 The backend API consists of several components:
