@@ -66,22 +66,30 @@ The application uses **Angular** for the frontend and **Node.js with Express** f
 
 ## 🏗 System Architecture
 
-The system architecture consists of three main components:
+The system architecture consists of three main components.
 
-### 1. Frontend Application
+### System Architecture Diagram
 
-* Built using Angular
-* Provides the user interface for customers and administrators
+```mermaid
+flowchart LR
 
-### 2. Backend API
+Customer[Customer] --> Frontend[Angular Frontend]
+Admin[Administrator] --> Frontend
 
-* Built using Node.js and Express
-* Handles business logic and API requests
+Frontend --> API[Node.js + Express API]
+API --> Database[(MongoDB Atlas)]
+```
 
-### 3. Database
+### Architecture Explanation
 
-* MongoDB database hosted on MongoDB Atlas
-* Stores user accounts, movies, and rental data
+**Frontend (Angular)**
+Provides the user interface where customers browse movies and administrators manage the catalog.
+
+**Backend (Node.js + Express)**
+Processes business logic, authentication, and handles API requests between the frontend and the database.
+
+**Database (MongoDB Atlas)**
+Stores application data including users, movies, and rental records.
 
 ---
 
@@ -122,13 +130,13 @@ movie-rental-system
 
 ---
 
-# 📚 Project Documentation
+## 📚 Project Documentation
 
 This project contains documentation created for multiple assignments in the Software Engineering module.
 
 ---
 
-## 📘 Assignment 3 Documentation
+### 📘 Assignment 3 Documentation
 
 These documents describe the initial system design and architecture.
 
@@ -137,7 +145,7 @@ These documents describe the initial system design and architecture.
 
 ---
 
-## 📗 Assignment 4 Documentation
+### 📗 Assignment 4 Documentation
 
 These documents focus on stakeholder analysis and system requirements.
 
@@ -164,5 +172,6 @@ Possible future features include:
 Thaakirah A
 
 Software Development Student
+Honours Student – Software Engineering
 
-Student Software Engineering Project
+GitHub: https://github.com/ThaakirahA
