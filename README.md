@@ -169,9 +169,10 @@ Possible future features include:
 
 ## 👨‍💻 Author
 
-Thaakirah A
+ThaakirahA
 
-Software Development Student
+Software Development 
+
 Honours Student – Software Engineering
 
 GitHub: https://github.com/ThaakirahA
