@@ -4,95 +4,198 @@
 
 Movie Rental System
 
-## Domain
+---
 
-Entertainment / Movie Rental Services
+# Domain
 
-## Problem Statement
-
-The system provides an online platform where users can browse and rent movies digitally instead of visiting physical rental stores.
-
-## Individual Scope
-
-The system will allow users to register, browse movies, rent movies, and manage their rentals while administrators manage the movie catalog.
+The Movie Rental System belongs to the **Entertainment and Media domain**.
+It provides a digital platform where users can browse and rent movies online instead of visiting a physical rental store.
 
 ---
 
-# C4 System Architecture
+# Problem Statement
 
-## Level 1: System Context Diagram
+Traditional movie rental stores require customers to travel to a physical location to rent movies. This can be inconvenient and time consuming for users.
 
-This diagram shows how users interact with the Movie Rental System.
-
-```mermaid
-C4Context
-title Movie Rental System Context Diagram
-
-Person(customer, "Customer", "User who rents movies")
-Person(admin, "Administrator", "Manages movie catalog")
-
-System(movieSystem, "Movie Rental System", "Allows users to browse and rent movies")
-
-Rel(customer, movieSystem, "Browses and rents movies")
-Rel(admin, movieSystem, "Manages movie catalog")
-```
+The Movie Rental System provides an online platform where users can browse available movies, rent them digitally, and manage their rental history from anywhere using a web application.
 
 ---
 
-## Level 2: Container Diagram
+# Individual Scope
 
-This diagram shows the main system containers.
+This project will be developed as an individual system focusing on the core features of an online movie rental platform.
 
-```mermaid
-C4Container
-title Movie Rental System Container Diagram
+The system will include:
 
-Person(customer, "Customer")
-Person(admin, "Administrator")
+### User Features
 
-System_Boundary(movieSystem, "Movie Rental System") {
+* User registration
+* User login and authentication
+* Browse available movies
+* Search for movies
+* Rent movies
+* View rental history
 
-Container(webApp, "Web Application", "HTML, CSS, JavaScript", "User interface for customers and admins")
+### Administrator Features
 
-Container(api, "Backend API", "Node.js / Java / Python", "Handles business logic")
-
-Container(database, "Database", "MySQL / PostgreSQL", "Stores users, movies, and rentals")
-
-}
-
-Rel(customer, webApp, "Uses")
-Rel(admin, webApp, "Uses")
-
-Rel(webApp, api, "Sends requests to")
-
-Rel(api, database, "Reads/Writes data")
-```
+* Add new movies
+* Update movie information
+* Remove movies
+* Manage movie availability
 
 ---
 
-## Level 3: Component Diagram
+# C4 Model Architecture
 
-This diagram shows internal backend components.
+The system architecture is described using a simplified version of the **C4 Model**.
+The diagrams included are:
+
+1. System Context Diagram
+2. Container Diagram
+3. Component Diagram
+
+---
+
+# Level 1 — System Context Diagram
+
+This diagram shows how external users interact with the Movie Rental System.
 
 ```mermaid
-C4Component
-title Movie Rental System Component Diagram
+flowchart TD
 
-Container(api, "Backend API") {
+Customer[Customer]
+Admin[Administrator]
 
-Component(userService, "User Service", "Handles user accounts")
+System[Movie Rental System]
 
-Component(movieService, "Movie Service", "Manages movie catalog")
-
-Component(rentalService, "Rental Service", "Processes movie rentals")
-
-Component(databaseAccess, "Database Access", "Handles database operations")
-
-}
-
-Rel(userService, databaseAccess, "Reads/Writes")
-
-Rel(movieService, databaseAccess, "Reads/Writes")
-
-Rel(rentalService, databaseAccess, "Reads/Writes")
+Customer -->|Browse and rent movies| System
+Admin -->|Manage movie catalog| System
 ```
+
+### Explanation
+
+The system interacts with two main users:
+
+**Customer**
+
+* Registers and logs into the system
+* Browses available movies
+* Searches movies
+* Rents movies
+
+**Administrator**
+
+* Adds movies
+* Updates movie information
+* Removes movies
+* Manages movie availability
+
+---
+
+# Level 2 — Container Diagram
+
+This diagram shows the main containers that make up the system.
+
+```mermaid
+flowchart TD
+
+User[Customer / Admin]
+
+Angular[Angular Web Application]
+
+API[Backend API Server  
+Node.js + Express]
+
+DB[(MongoDB Atlas Database)]
+
+User --> Angular
+Angular --> API
+API --> DB
+```
+
+### Explanation
+
+The system consists of three main containers:
+
+**Angular Web Application**
+
+* Built using Angular
+* Provides the user interface for browsing and renting movies
+
+**Backend API Server**
+
+* Built using Node.js and Express
+* Handles business logic and processes requests from the frontend
+
+**Database**
+
+* Uses MongoDB
+* Hosted on MongoDB Atlas cloud database
+
+---
+
+# Level 3 — Component Diagram
+
+This diagram shows the internal components inside the backend API.
+
+```mermaid
+flowchart TD
+
+API[Backend API Server]
+
+Auth[Authentication Controller]
+Movies[Movie Controller]
+Rental[Rental Controller]
+DBService[Database Service]
+
+Database[(MongoDB Atlas)]
+
+API --> Auth
+API --> Movies
+API --> Rental
+
+Auth --> DBService
+Movies --> DBService
+Rental --> DBService
+
+DBService --> Database
+```
+
+### Explanation
+
+The backend API consists of several components:
+
+**Authentication Controller**
+
+* Handles user registration
+* Handles login authentication
+
+**Movie Controller**
+
+* Retrieves movie information
+* Allows administrators to manage movie catalog
+
+**Rental Controller**
+
+* Processes movie rental requests
+* Stores rental records
+
+**Database Service**
+
+* Communicates with MongoDB database
+* Handles storing and retrieving system data
+
+---
+
+# End-to-End System Flow
+
+The Movie Rental System works as follows:
+
+1. The user opens the Angular web application.
+2. The user registers or logs into the system.
+3. The user browses or searches for movies.
+4. The user selects a movie to rent.
+5. The Angular frontend sends an API request to the backend server.
+6. The backend server processes the request.
+7. Rental information is stored in MongoDB Atlas.
+8. The system confirms the rental to the user.
