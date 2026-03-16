@@ -142,7 +142,8 @@ Possible future features include:
 
 ## 👨‍💻 Author
 
-Thaakirah A
+ThaakirahA
+
 Software Development Student
 
 Student Software Engineering Project
