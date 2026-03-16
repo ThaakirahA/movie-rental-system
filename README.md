@@ -1,42 +1,20 @@
 # 🎬 Movie Rental System
 
-![Angular](https://img.shields.io/badge/Frontend-Angular-red)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![License](https://img.shields.io/badge/Project-University-blue)
-
-## 📌 Project Overview
-
-The **Movie Rental System** is a web-based application that allows users to browse, search, and rent movies online.
-The system provides a digital alternative to traditional movie rental stores by allowing users to manage their rentals through an intuitive web interface.
-
-The application uses **Angular** for the frontend and stores data using **MongoDB** hosted on **MongoDB Atlas**.
+Angular • Node.js • MongoDB
 
 ---
-## System Overview
 
-The Movie Rental System allows users to browse and rent movies through a web application.
+# 📌 Project Overview
 
-## System Overview
+The Movie Rental System is a web-based application that allows users to browse, search, and rent movies online. The system provides a digital alternative to traditional movie rental stores by allowing users to manage their rentals through a simple web interface.
 
-The Movie Rental System allows users to browse and rent movies through a web application.
+The application uses **Angular** for the frontend and stores data using **MongoDB hosted on MongoDB Atlas**.
 
-```mermaid
-flowchart LR
-
-User[User]
-Frontend[Angular Web Application]
-Backend[Node.js + Express API]
-Database[(MongoDB Atlas Database)]
-
-User --> Frontend
-Frontend --> Backend
-Backend --> Database
 ---
 
 # 👥 Users of the System
 
-### Customer
+## Customer
 
 * Register an account
 * Login to the system
@@ -45,7 +23,7 @@ Backend --> Database
 * Rent movies
 * View rental history
 
-### Administrator
+## Administrator
 
 * Add new movies
 * Update movie details
@@ -76,7 +54,7 @@ Backend --> Database
 
 ## Version Control
 
-* GitHub
+* Git and GitHub
 
 ---
 
@@ -84,20 +62,20 @@ Backend --> Database
 
 The system architecture consists of three main components:
 
-1. **Frontend Application**
+## 1. Frontend Application
 
-   * Built using Angular
-   * Provides the user interface for customers and administrators
+* Built using Angular
+* Provides the user interface for customers and administrators
 
-2. **Backend API**
+## 2. Backend API
 
-   * Built using Node.js and Express
-   * Handles business logic and API requests
+* Built using Node.js and Express
+* Handles business logic and API requests
 
-3. **Database**
+## 3. Database
 
-   * MongoDB database hosted on MongoDB Atlas
-   * Stores user accounts, movies, and rental data
+* MongoDB database hosted on MongoDB Atlas
+* Stores user accounts, movies, and rental data
 
 ---
 
@@ -121,12 +99,12 @@ movie-rental-system
 ├── frontend (Angular Application)
 │   ├── components
 │   ├── services
-│   ├── models
+│   └── models
 │
 ├── backend (Node.js API)
 │   ├── controllers
 │   ├── routes
-│   ├── models
+│   └── models
 │
 ├── README.md
 ├── SPECIFICATION.md
@@ -136,6 +114,8 @@ movie-rental-system
 ---
 
 # 📑 Project Documentation
+
+Project documentation is available in the following files:
 
 * 📄 [System Specification](SPECIFICATION.md)
 * 🏗 [System Architecture](ARCHITECTURE.md)
@@ -149,23 +129,14 @@ Possible future features include:
 * Movie ratings and reviews
 * Online payment integration
 * Movie recommendation system
-* Watch trailers
+* Watch movie trailers
 * Mobile application support
-
----
-
-## Documentation
-
-Project documentation can be found here:
-
-- [System Specification](SPECIFICATION.md)
-- [System Architecture](ARCHITECTURE.md)
 
 ---
 
 # 👨‍💻 Author
 
-Thaakirah A  
+Thaakirah A
 Software Development Student
 
 Student Software Engineering Project
