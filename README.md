@@ -13,7 +13,7 @@ The **Movie Rental System** is a web-based application that allows users to brow
 
 The system provides a digital alternative to traditional movie rental stores by allowing users to manage their rentals through a simple and intuitive web interface.
 
-The application uses **Angular** for the frontend and stores data using **MongoDB** hosted on **MongoDB Atlas**.
+The application uses **Angular** for the frontend and **Node.js with Express** for the backend API. Data is stored in **MongoDB** hosted on **MongoDB Atlas**.
 
 ---
 
@@ -114,17 +114,36 @@ movie-rental-system
 │
 ├── README.md
 ├── SPECIFICATION.md
-└── ARCHITECTURE.md
+├── ARCHITECTURE.md
+├── STAKEHOLDER_ANALYSIS.md
+├── SYSTEM_REQUIREMENTS.md
+└── REFLECTION.md
 ```
 
 ---
 
-## 📑 Project Documentation
+# 📚 Project Documentation
 
-Project documentation can be found in the following files:
+This project contains documentation created for multiple assignments in the Software Engineering module.
+
+---
+
+## 📘 Assignment 3 Documentation
+
+These documents describe the initial system design and architecture.
 
 * 📄 [System Specification](SPECIFICATION.md)
 * 🏗 [System Architecture](ARCHITECTURE.md)
+
+---
+
+## 📗 Assignment 4 Documentation
+
+These documents focus on stakeholder analysis and system requirements.
+
+* 👥 [Stakeholder Analysis](STAKEHOLDER_ANALYSIS.md)
+* ⚙️ [System Requirements](SYSTEM_REQUIREMENTS.md)
+* 📝 [Reflection](REFLECTION.md)
 
 ---
 
@@ -142,7 +161,7 @@ Possible future features include:
 
 ## 👨‍💻 Author
 
-ThaakirahA
+Thaakirah A
 
 Software Development Student
 
