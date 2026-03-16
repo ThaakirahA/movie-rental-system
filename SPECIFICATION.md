@@ -98,6 +98,7 @@ The system must provide the following functionality:
 7. The system must allow administrators to add new movies.
 8. The system must allow administrators to update movie details.
 9. The system must allow administrators to remove movies.
+<<<<<<< HEAD
 
 ---
 
@@ -160,3 +161,67 @@ The system architecture consists of:
 * MongoDB database hosted on MongoDB Atlas
 
 The frontend communicates with the backend using HTTP requests, and the backend processes the requests and interacts with the database to store and retrieve data.
+=======
+
+---
+
+# 7. Non-Functional Requirements
+
+The system must also satisfy the following non-functional requirements:
+
+### Usability
+
+The system should provide a simple and easy-to-use interface for users.
+
+### Performance
+
+The system should respond quickly to user requests and load movie information efficiently.
+
+### Security
+
+User authentication must be implemented to protect user accounts and system data.
+
+### Availability
+
+The system should be accessible online through a web browser.
+
+---
+
+# 8. Technology Stack
+
+The system will be developed using modern web technologies.
+
+## Frontend
+
+The frontend application will be built using Angular.
+Angular provides a component-based architecture that helps organize the user interface into reusable components.
+
+## Backend
+
+The backend server will be developed using Node.js with Express.js.
+This will handle API requests, business logic, and communication with the database.
+
+## Database
+
+The system will use MongoDB to store application data such as users, movies, and rentals.
+
+The database will be hosted on MongoDB Atlas, a cloud-based database platform that provides secure and scalable data storage.
+
+## Version Control
+
+The project will use Git and GitHub for version control and project management.
+
+---
+
+# 9. System Overview
+
+The Movie Rental System follows a web-based architecture where users interact with a frontend web application.
+
+The system architecture consists of:
+
+* Angular frontend application
+* Node.js backend API
+* MongoDB database hosted on MongoDB Atlas
+
+The frontend communicates with the backend using HTTP requests, and the backend processes the requests and interacts with the database to store and retrieve data.
+

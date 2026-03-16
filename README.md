@@ -147,5 +147,3 @@ ThaakirahA
 Software Development Student
 
 Student Software Engineering Project
-
-University Assignment
