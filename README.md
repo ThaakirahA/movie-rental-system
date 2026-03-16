@@ -17,21 +17,21 @@ The application uses **Angular** for the frontend and stores data using **MongoD
 
 The Movie Rental System allows users to browse and rent movies through a web application.
 
+## System Overview
+
+The Movie Rental System allows users to browse and rent movies through a web application.
+
 ```mermaid
 flowchart LR
 
 User[User]
-
 Frontend[Angular Web Application]
-
 Backend[Node.js + Express API]
-
-Database[(MongoDB Atlas)]
+Database[(MongoDB Atlas Database)]
 
 User --> Frontend
 Frontend --> Backend
 Backend --> Database
-
 ---
 
 # 👥 Users of the System
