@@ -13,6 +13,26 @@ The system provides a digital alternative to traditional movie rental stores by 
 The application uses **Angular** for the frontend and stores data using **MongoDB** hosted on **MongoDB Atlas**.
 
 ---
+## System Overview
+
+The Movie Rental System allows users to browse and rent movies through a web application.
+
+```mermaid
+flowchart LR
+
+User[User]
+
+Frontend[Angular Web Application]
+
+Backend[Node.js + Express API]
+
+Database[(MongoDB Atlas)]
+
+User --> Frontend
+Frontend --> Backend
+Backend --> Database
+
+---
 
 # 👥 Users of the System
 
