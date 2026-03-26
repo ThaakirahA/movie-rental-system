@@ -98,7 +98,7 @@ The system must provide the following functionality:
 7. The system must allow administrators to add new movies.
 8. The system must allow administrators to update movie details.
 9. The system must allow administrators to remove movies.
-<<<<<<< HEAD
+
 
 ---
 
