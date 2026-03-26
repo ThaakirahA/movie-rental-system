@@ -1,38 +1,30 @@
-# Use Case Diagram – Aura Reels Movie Rental System
+## 🎬 Use Case Diagram – Aura Reels Movie Rental System
 
-## Use Case Diagram (Simplified & Clear)
+The diagram shows how actors interact with the system’s main functions.
+
+### Use Case Diagram
 
 ```mermaid
-flowchart TD
+flowchart LR
     %% Actors
-    Customer((Customer))
-    Admin((Administrator))
-    Staff((Staff))
-    SysAdmin((System Admin))
-    Owner((Business Owner))
+    Customer[Customer] 
+    Admin[Administrator] 
+    Staff[Staff] 
+    SysAdmin[System Admin] 
+    Owner[Business Owner]
 
-    %% Customer Use Cases
-    subgraph "Customer Use Cases"
-        Register["Register Account"]
-        Login["Login"]
-        Browse["Browse Movies"]
-        Search["Search Movies"]
-        Rent["Rent Movie"]
-        History["View Rental History"]
-        Trailer["Watch Movie Trailer"]
-    end
-
-    %% Admin & Staff Use Cases
-    subgraph "Admin / Staff Use Cases"
-        Manage["Manage Movie Catalog"]
-        Reports["Generate Reports"]
-        ManageUsers["Manage User Accounts"]
-    end
-
-    %% Notifications (shared)
-    subgraph "Notifications"
-        Notify["Receive Notifications"]
-    end
+    %% System Use Cases
+    Register["Register Account"]
+    Login["Login"]
+    Browse["Browse Movies"]
+    Search["Search Movies"]
+    Rent["Rent Movie"]
+    History["View Rental History"]
+    Trailer["Watch Movie Trailer"]
+    Manage["Manage Movie Catalog"]
+    Reports["Generate Reports"]
+    ManageUsers["Manage User Accounts"]
+    Notify["Receive Notifications"]
 
     %% Actor to Use Case Relationships
     Customer --> Register
