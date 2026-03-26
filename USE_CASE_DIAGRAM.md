@@ -1,6 +1,6 @@
 # Use Case Diagram – Aura Reels Movie Rental System
 
-## Use Case Diagram (Mermaid UML – Distinction-Level)
+## Use Case Diagram (Simplified & Clear)
 
 ```mermaid
 flowchart TD
@@ -11,8 +11,8 @@ flowchart TD
     SysAdmin((System Admin))
     Owner((Business Owner))
 
-    %% System Boundary
-    subgraph "Aura Reels Movie Rental System"
+    %% Customer Use Cases
+    subgraph "Customer Use Cases"
         Register["Register Account"]
         Login["Login"]
         Browse["Browse Movies"]
@@ -20,10 +20,18 @@ flowchart TD
         Rent["Rent Movie"]
         History["View Rental History"]
         Trailer["Watch Movie Trailer"]
+    end
+
+    %% Admin & Staff Use Cases
+    subgraph "Admin / Staff Use Cases"
         Manage["Manage Movie Catalog"]
         Reports["Generate Reports"]
-        Notify["Receive Notifications"]
         ManageUsers["Manage User Accounts"]
+    end
+
+    %% Notifications (shared)
+    subgraph "Notifications"
+        Notify["Receive Notifications"]
     end
 
     %% Actor to Use Case Relationships
@@ -42,8 +50,8 @@ flowchart TD
     Staff --> Manage
     Staff --> Reports
 
-    SysAdmin --> Reports
     SysAdmin --> ManageUsers
+    SysAdmin --> Reports
 
     Owner --> Reports
     Owner --> Notify
