@@ -1,115 +1,158 @@
 # Use Case Specifications – Aura Reels Movie Rental System
 
-## 1. Register Account
+---
+
+## Use Case 1 – User Registration
+
 **Actor:** Customer  
 **Description:** Allows a new user to create an account to access the system.  
-**Preconditions:** User does not have an existing account.  
-**Postconditions:** Account is created; user can log in.  
+**Preconditions:** User is not logged in and has access to the registration page.  
+**Postconditions:** User account is created, and the user can log in.  
+
 **Basic Flow:**  
-1. User clicks "Register".  
-2. User enters personal information (name, email, password).  
-3. System validates input.  
-4. System creates the account.  
-5. User receives confirmation message.  
+1. User navigates to the registration page.  
+2. User enters required details (name, email, password).  
+3. User clicks "Register".  
+4. System validates input and creates the account.  
+5. Confirmation message is displayed.  
+
 **Alternative Flows:**  
-- Invalid email/password → System displays error.  
+- Invalid input → system displays error and prompts correction.  
+- Email already exists → system displays duplicate account message.  
 
 ---
 
-## 2. Login
-**Actor:** Customer / Admin / Staff  
-**Description:** Authenticates a user to access system features.  
-**Preconditions:** User must have an existing account.  
-**Postconditions:** User is logged in and can access authorized features.  
-**Basic Flow:**  
-1. User enters username and password.  
-2. System validates credentials.  
-3. System grants access.  
-**Alternative Flows:**  
-- Incorrect password → System displays error.  
-- Account locked → System displays account locked message.  
+## Use Case 2 – User Login
 
----
-
-## 3. Browse Movies
 **Actor:** Customer  
-**Description:** Allows customers to view available movies.  
+**Description:** Authenticates users to access system features.  
+**Preconditions:** User has a registered account.  
+**Postconditions:** User is logged in and redirected to the dashboard.  
+
+**Basic Flow:**  
+1. User enters username/email and password.  
+2. User clicks "Login".  
+3. System validates credentials.  
+4. User is redirected to the dashboard.  
+
+**Alternative Flows:**  
+- Incorrect credentials → system displays error.  
+- Account locked → system informs the user and provides recovery options.  
+
+---
+
+## Use Case 3 – Browse Movies
+
+**Actor:** Customer  
+**Description:** Enables users to view the catalog of available movies.  
 **Preconditions:** User is logged in.  
-**Postconditions:** Movies are displayed for selection.  
+**Postconditions:** User sees a list of all movies.  
+
 **Basic Flow:**  
-1. User clicks “Browse Movies”.  
-2. System displays a list of available movies with details.  
+1. User navigates to "Movie Catalog".  
+2. System displays available movies with titles, genres, and ratings.  
+3. User scrolls or navigates pages to browse movies.  
+
 **Alternative Flows:**  
-- No movies available → Display “No movies available”.  
+- No movies available → system displays "No movies found".  
 
 ---
 
-## 4. Search Movies
+## Use Case 4 – Search Movies
+
 **Actor:** Customer  
-**Description:** Search for a movie by title or genre.  
+**Description:** Allows users to find specific movies by title.  
 **Preconditions:** User is logged in.  
-**Postconditions:** System displays search results.  
+**Postconditions:** Relevant search results are displayed.  
+
 **Basic Flow:**  
-1. User enters a keyword or genre.  
-2. System searches database.  
-3. System displays matching movies.  
+1. User enters movie title in the search bar.  
+2. User clicks "Search".  
+3. System searches the database and displays matching results.  
+
 **Alternative Flows:**  
-- No match → Display “No movies found”.  
+- No matches found → system displays "No results found".  
+- Invalid input → system prompts correct format.  
 
 ---
 
-## 5. Rent Movie
+## Use Case 5 – Rent Movie
+
 **Actor:** Customer  
-**Description:** Allows customers to rent a selected movie.  
-**Preconditions:** User is logged in and movie is available.  
-**Postconditions:** Rental record is created; movie availability updated.  
+**Description:** Enables users to rent a selected movie.  
+**Preconditions:** User is logged in. Movie is available.  
+**Postconditions:** Rental is stored, availability is updated, and confirmation is sent.  
+
 **Basic Flow:**  
 1. User selects a movie.  
-2. User clicks “Rent Movie”.  
-3. System validates availability.  
-4. System updates rental record.  
-5. System confirms rental to user.  
+2. User clicks "Rent".  
+3. System verifies movie availability.  
+4. System records rental and updates availability.  
+5. User receives confirmation notification.  
+
 **Alternative Flows:**  
-- Movie unavailable → Display “Movie not available”.  
+- Movie not available → system displays "Movie not available".  
+- Payment or checkout fails → system cancels rental and notifies user.  
 
 ---
 
-## 6. Manage Movie Catalog
-**Actor:** Admin / Staff  
-**Description:** Add, update, or remove movies in the system.  
-**Preconditions:** User is an authenticated admin/staff.  
-**Postconditions:** Catalog updated successfully.  
+## Use Case 6 – View Rental History
+
+**Actor:** Customer  
+**Description:** Shows a list of previously rented movies.  
+**Preconditions:** User is logged in.  
+**Postconditions:** User can view all past rentals.  
+
 **Basic Flow:**  
-1. User selects “Manage Catalog”.  
-2. User adds, edits, or deletes movies.  
-3. System saves changes and confirms success.  
+1. User navigates to "Rental History".  
+2. System retrieves user's rental records.  
+3. System displays history with titles, dates, and status.  
+
 **Alternative Flows:**  
-- Invalid input → Display error message.  
+- No previous rentals → system displays "No rentals yet".  
 
 ---
 
-## 7. Generate Reports
-**Actor:** Admin / Staff / Owner  
-**Description:** Provides reports on rentals, users, and revenue.  
-**Preconditions:** User is authenticated and authorized.  
-**Postconditions:** Reports are displayed/downloaded.  
+## Use Case 7 – Admin Manage Movie Catalog
+
+**Actor:** Administrator  
+**Description:** Allows admins to add, edit, or remove movies.  
+**Preconditions:** Admin is logged in.  
+**Postconditions:** Catalog reflects changes made by admin.  
+
 **Basic Flow:**  
-1. User selects “Generate Reports”.  
-2. System compiles data.  
-3. System displays report.  
+1. Admin navigates to "Manage Movies".  
+2. Admin adds a new movie OR edits/deletes an existing one.  
+3. System validates changes and updates the catalog.  
+4. Changes are confirmed with a message.  
+
 **Alternative Flows:**  
-- No data available → Display “No data to report”.  
+- Invalid input → system prompts corrections.  
+- Delete fails → system displays error message.  
 
 ---
 
-## 8. Receive Notifications
-**Actor:** Customer / Owner  
-**Description:** Users receive notifications for important events (e.g., rental confirmation).  
-**Preconditions:** User is logged in and notifications enabled.  
-**Postconditions:** Notifications delivered to the user.  
+## Use Case 8 – Admin Generate Reports
+
+**Actor:** Administrator / Staff / Owner  
+**Description:** Generates system reports like rentals, users, or revenue.  
+**Preconditions:** User is logged in with proper privileges.  
+**Postconditions:** Reports are displayed or downloaded.  
+
 **Basic Flow:**  
-1. System detects event (e.g., movie rented).  
-2. System sends notification.  
-3. User receives notification.  
+1. User selects "Generate Reports".  
+2. User selects report type (rentals, users, revenue).  
+3. System compiles and displays report.  
+4. User can download report if needed.  
+
 **Alternative Flows:**  
-- Notification fails → System retries or logs failure.  
+- Report fails to generate → system displays error.  
+- No data → system displays "No data available".  
+
+---
+
+## Notes
+
+- These use cases are mapped to functional requirements from Assignment 4.  
+- All alternative flows handle errors or exceptions gracefully.  
+- Use cases support both customer-facing and admin-facing system functionality.  
