@@ -1,5 +1,7 @@
 # 🎬 Use Case Diagram – Aura Reels Movie Rental System
 
+## Diagram
+
 ```mermaid
 flowchart LR
     Customer[Customer]
@@ -9,21 +11,21 @@ flowchart LR
     SysAdmin[System Administrator]
     Owner[Business Owner]
 
-    UC1([Register Account])
-    UC2([Login])
-    UC3([Browse Movies])
-    UC4([Search Movies])
-    UC5([View Movie Details])
-    UC6([Watch Trailer])
-    UC7([Add to Rental Cart])
-    UC8([Rent Movie])
-    UC9([View Rental History])
-    UC10([Manage Movie Catalog])
-    UC11([Manage User Accounts])
-    UC12([Generate Reports])
-    UC13([Maintain System])
-    UC14([Process Payment])
-    UC15([Send Rental Confirmation])
+    UC1(Register Account)
+    UC2(Login)
+    UC3(Browse Movies)
+    UC4(Search Movies)
+    UC5(View Movie Details)
+    UC6(Watch Trailer)
+    UC7(Add to Rental Cart)
+    UC8(Rent Movie)
+    UC9(View Rental History)
+    UC10(Manage Movie Catalog)
+    UC11(Manage User Accounts)
+    UC12(Generate Reports)
+    UC13(Maintain System)
+    UC14(Process Payment)
+    UC15(Send Rental Confirmation)
 
     Guest --> UC1
     Guest --> UC3
@@ -51,42 +53,41 @@ flowchart LR
 
     Owner --> UC12
 
-# Key Actors and Their Roles
-Guest
+    UC8 --> UC14
+    UC8 --> UC15
+```
 
+## Key Actors and Their Roles
+
+### Guest
 A guest is an unregistered user who can browse movies, search for movies, view movie details, and register for an account.
 
-Customer
-
+### Customer
 A customer is a registered user who can log into the system, browse movies, search for movies, view movie details, watch trailers, add movies to a rental cart, rent movies, and view their rental history.
 
-Staff
-
+### Staff
 Staff members are responsible for managing the movie catalog and generating reports related to movie rentals and system usage.
 
-Administrator
-
+### Administrator
 The administrator oversees system operations, manages the movie catalog, manages user accounts, and generates reports.
 
-System Administrator
-
+### System Administrator
 The system administrator is responsible for maintaining the system, managing technical configurations, and ensuring system security and uptime.
 
-Business Owner
-
+### Business Owner
 The business owner uses system reports to monitor performance, user activity, and rental trends.
 
-Relationships Between Actors and Use Cases
+## Relationships Between Actors and Use Cases
 
 The diagram shows how each actor interacts with the system based on their responsibilities.
 
 The Customer performs the main system actions such as browsing movies, searching, renting, and viewing rental history. The Guest has limited access and must register to become a customer.
 
-The Rent Movie use case includes Process Payment and Send Rental Confirmation, since both are required to complete a rental.
+The Rent Movie use case is linked to Process Payment and Send Rental Confirmation, since both are required to complete a rental.
 
 Staff and Administrator both manage the movie catalog and generate reports. The System Administrator maintains the system and manages technical aspects. The Business Owner uses reports to monitor system performance and growth.
 
-Alignment with Stakeholder Concerns
+## Alignment with Stakeholder Concerns
 
 This diagram aligns with stakeholder needs identified in Assignment 4.
 
