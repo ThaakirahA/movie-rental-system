@@ -1,7 +1,5 @@
 # 🎬 Use Case Diagram – Aura Reels Movie Rental System
 
-This diagram illustrates the interactions between the primary actors (Customer and Administrator) and the core functionalities of the system.
-
 ```mermaid
 flowchart LR
     Customer[Customer]
@@ -53,5 +51,45 @@ flowchart LR
 
     Owner --> UC12
 
-    UC8 -.-> UC14
-    UC8 -.-> UC15
+# Key Actors and Their Roles
+Guest
+
+A guest is an unregistered user who can browse movies, search for movies, view movie details, and register for an account.
+
+Customer
+
+A customer is a registered user who can log into the system, browse movies, search for movies, view movie details, watch trailers, add movies to a rental cart, rent movies, and view their rental history.
+
+Staff
+
+Staff members are responsible for managing the movie catalog and generating reports related to movie rentals and system usage.
+
+Administrator
+
+The administrator oversees system operations, manages the movie catalog, manages user accounts, and generates reports.
+
+System Administrator
+
+The system administrator is responsible for maintaining the system, managing technical configurations, and ensuring system security and uptime.
+
+Business Owner
+
+The business owner uses system reports to monitor performance, user activity, and rental trends.
+
+Relationships Between Actors and Use Cases
+
+The diagram shows how each actor interacts with the system based on their responsibilities.
+
+The Customer performs the main system actions such as browsing movies, searching, renting, and viewing rental history. The Guest has limited access and must register to become a customer.
+
+The Rent Movie use case includes Process Payment and Send Rental Confirmation, since both are required to complete a rental.
+
+Staff and Administrator both manage the movie catalog and generate reports. The System Administrator maintains the system and manages technical aspects. The Business Owner uses reports to monitor system performance and growth.
+
+Alignment with Stakeholder Concerns
+
+This diagram aligns with stakeholder needs identified in Assignment 4.
+
+Customers need fast and easy rentals, which are supported by browsing, searching, and renting use cases. Staff and administrators require efficient management tools, which are supported by catalog and user management use cases. The system administrator ensures reliability and security through system maintenance. The business owner monitors success through reporting.
+
+This ensures the system meets usability, performance, and management requirements.
