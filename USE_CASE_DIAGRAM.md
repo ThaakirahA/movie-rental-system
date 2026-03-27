@@ -4,41 +4,54 @@ This diagram illustrates the interactions between the primary actors (Customer a
 
 ```mermaid
 flowchart LR
-    %% Actors
     Customer[Customer]
+    Guest[Guest]
+    Staff[Staff]
     Admin[Administrator]
+    SysAdmin[System Administrator]
+    Owner[Business Owner]
 
-    %% System boundary
-    subgraph AuraReelsSystem["Aura Reels Movie Rental System"]
-        UC1((Register Account))
-        UC2((Login to System))
-        UC3((Browse Movie Catalogue))
-        UC4((Search for Movies))
-        UC5((Rent a Movie))
-        UC6((View Rental History))
-        
-        UC7((Add New Movie))
-        UC8((Update Movie Details))
-        UC9((Delete Movie))
-        UC10((Manage Availability))
-    end
+    UC1([Register Account])
+    UC2([Login])
+    UC3([Browse Movies])
+    UC4([Search Movies])
+    UC5([View Movie Details])
+    UC6([Watch Trailer])
+    UC7([Add to Rental Cart])
+    UC8([Rent Movie])
+    UC9([View Rental History])
+    UC10([Manage Movie Catalog])
+    UC11([Manage User Accounts])
+    UC12([Generate Reports])
+    UC13([Maintain System])
+    UC14([Process Payment])
+    UC15([Send Rental Confirmation])
 
-    %% Customer Associations
-    Customer --> UC1
+    Guest --> UC1
+    Guest --> UC3
+    Guest --> UC4
+    Guest --> UC5
+
     Customer --> UC2
     Customer --> UC3
     Customer --> UC4
     Customer --> UC5
     Customer --> UC6
+    Customer --> UC7
+    Customer --> UC8
+    Customer --> UC9
 
-    %% Administrator Associations
-    Admin --> UC2
-    Admin --> UC7
-    Admin --> UC8
-    Admin --> UC9
+    Staff --> UC10
+    Staff --> UC12
+
     Admin --> UC10
+    Admin --> UC11
+    Admin --> UC12
 
-    %% Styling for a neat look
-    style AuraReelsSystem fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Customer fill:#fff,stroke:#333,stroke-width:2px
-    style Admin fill:#fff,stroke:#333,stroke-width:2px
+    SysAdmin --> UC11
+    SysAdmin --> UC13
+
+    Owner --> UC12
+
+    UC8 -.-> UC14
+    UC8 -.-> UC15
