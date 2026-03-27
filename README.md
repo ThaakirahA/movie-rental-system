@@ -111,21 +111,25 @@ Stores application data including users, movies, and rental records.
 movie-rental-system
 │
 ├── frontend (Angular Application)
-│   ├── components
-│   ├── services
-│   └── models
+│ ├── components
+│ ├── services
+│ └── models
 │
 ├── backend (Node.js API)
-│   ├── controllers
-│   ├── routes
-│   └── models
+│ ├── controllers
+│ ├── routes
+│ └── models
 │
 ├── README.md
 ├── SPECIFICATION.md
 ├── ARCHITECTURE.md
 ├── STAKEHOLDER_ANALYSIS.md
 ├── SYSTEM_REQUIREMENTS.md
-└── REFLECTION.md
+├── REFLECTION.md
+├── USE_CASE_DIAGRAM.md
+├── USE_CASE_SPECIFICATIONS.md
+├── TEST_CASES.md
+├── REFLECTION_ASSIGNMENT5.md
 ```
 
 ---
@@ -155,6 +159,14 @@ These documents focus on stakeholder analysis and system requirements.
 
 ---
 
+### 📙 Assignment 5 Documentation
+
+These documents focus on use case modelling, use case specifications, and system testing.
+
+* 🎭 [Use Case Diagram](USE_CASE_DIAGRAM.md)
+* 📄 [Use Case Specifications](USE_CASE_SPECIFICATIONS.md)
+* ✅ [Test Cases](TEST_CASES.md)
+* 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
 ## 🚀 Future Improvements
 
 Possible future features include:
