@@ -1,158 +1,152 @@
 # Use Case Specifications – Aura Reels Movie Rental System
 
+This document provides detailed specifications for the key use cases of the Aura Reels Movie Rental System. Each use case is directly linked to functional requirements defined in Assignment 4.
+
 ---
 
-## Use Case 1 – User Registration
-
+## 1. Use Case: Register Account
 **Actor:** Customer  
 **Description:** Allows a new user to create an account to access the system.  
-**Preconditions:** User is not logged in and has access to the registration page.  
-**Postconditions:** User account is created, and the user can log in.  
+**Precondition:** User is not logged in.  
+**Postcondition:** User account is created and user can log in.  
 
 **Basic Flow:**  
-1. User navigates to the registration page.  
-2. User enters required details (name, email, password).  
-3. User clicks "Register".  
+1. Customer navigates to the registration page.  
+2. Customer enters valid details (username, email, password).  
+3. Customer submits the form.  
 4. System validates input and creates the account.  
-5. Confirmation message is displayed.  
+5. System displays a success message and redirects to login page.  
 
 **Alternative Flows:**  
-- Invalid input → system displays error and prompts correction.  
-- Email already exists → system displays duplicate account message.  
+- 2a. Invalid email or password → System displays an error and prompts re-entry.  
+- 4a. Username already exists → System prompts to choose a different username.
 
 ---
 
-## Use Case 2 – User Login
+## 2. Use Case: Login
+**Actor:** Customer, Admin, Staff  
+**Description:** Authenticate users to access system features.  
+**Precondition:** User has a registered account.  
+**Postcondition:** User is authenticated and redirected to the dashboard.  
 
+**Basic Flow:**  
+1. User navigates to login page.  
+2. User enters username and password.  
+3. User clicks "Login."  
+4. System verifies credentials and grants access.  
+
+**Alternative Flows:**  
+- 2a. Incorrect credentials → System displays error and prompts retry.  
+- 2b. Account locked after multiple failed attempts → System notifies user.
+
+---
+
+## 3. Use Case: Browse Movies
 **Actor:** Customer  
-**Description:** Authenticates users to access system features.  
-**Preconditions:** User has a registered account.  
-**Postconditions:** User is logged in and redirected to the dashboard.  
+**Description:** Display available movies in the catalog.  
+**Precondition:** User is logged in.  
+**Postcondition:** Movie list is displayed.  
 
 **Basic Flow:**  
-1. User enters username/email and password.  
-2. User clicks "Login".  
-3. System validates credentials.  
-4. User is redirected to the dashboard.  
+1. Customer navigates to the catalog page.  
+2. System retrieves available movies from the database.  
+3. System displays movies with titles, genres, and ratings.  
 
 **Alternative Flows:**  
-- Incorrect credentials → system displays error.  
-- Account locked → system informs the user and provides recovery options.  
+- 2a. No movies available → System displays “No movies available” message.
 
 ---
 
-## Use Case 3 – Browse Movies
-
+## 4. Use Case: Search Movies
 **Actor:** Customer  
-**Description:** Enables users to view the catalog of available movies.  
-**Preconditions:** User is logged in.  
-**Postconditions:** User sees a list of all movies.  
+**Description:** Allow users to search for specific movies by title or genre.  
+**Precondition:** User is logged in.  
+**Postcondition:** Search results are displayed.  
 
 **Basic Flow:**  
-1. User navigates to "Movie Catalog".  
-2. System displays available movies with titles, genres, and ratings.  
-3. User scrolls or navigates pages to browse movies.  
+1. Customer enters search criteria.  
+2. Customer clicks “Search.”  
+3. System retrieves matching movies.  
+4. System displays results within 2 seconds.  
 
 **Alternative Flows:**  
-- No movies available → system displays "No movies found".  
+- 1a. No match found → System displays “No results found.”  
 
 ---
 
-## Use Case 4 – Search Movies
-
+## 5. Use Case: Rent Movie
 **Actor:** Customer  
-**Description:** Allows users to find specific movies by title.  
-**Preconditions:** User is logged in.  
-**Postconditions:** Relevant search results are displayed.  
+**Description:** Allows a user to rent a selected movie.  
+**Precondition:** User is logged in and movie is available.  
+**Postcondition:** Rental record is created and availability updated.  
 
 **Basic Flow:**  
-1. User enters movie title in the search bar.  
-2. User clicks "Search".  
-3. System searches the database and displays matching results.  
+1. Customer searches or browses for a movie.  
+2. Customer selects a movie.  
+3. Customer clicks “Rent” and confirms.  
+4. System updates the rental record and movie availability.  
+5. System sends confirmation notification to the user.  
 
 **Alternative Flows:**  
-- No matches found → system displays "No results found".  
-- Invalid input → system prompts correct format.  
+- 3a. Movie is unavailable → System displays “Movie unavailable” message.  
+- 4a. Rental fails due to server error → System logs error and notifies user.
 
 ---
 
-## Use Case 5 – Rent Movie
-
+## 6. Use Case: View Rental History
 **Actor:** Customer  
-**Description:** Enables users to rent a selected movie.  
-**Preconditions:** User is logged in. Movie is available.  
-**Postconditions:** Rental is stored, availability is updated, and confirmation is sent.  
+**Description:** Allows users to see previously rented movies.  
+**Precondition:** User is logged in.  
+**Postcondition:** User rental history is displayed.  
 
 **Basic Flow:**  
-1. User selects a movie.  
-2. User clicks "Rent".  
-3. System verifies movie availability.  
-4. System records rental and updates availability.  
-5. User receives confirmation notification.  
+1. Customer navigates to “Rental History.”  
+2. System retrieves user rental records.  
+3. System displays list of rented movies with dates.
 
 **Alternative Flows:**  
-- Movie not available → system displays "Movie not available".  
-- Payment or checkout fails → system cancels rental and notifies user.  
+- 2a. No previous rentals → System displays “No rental history available.”
 
 ---
 
-## Use Case 6 – View Rental History
-
-**Actor:** Customer  
-**Description:** Shows a list of previously rented movies.  
-**Preconditions:** User is logged in.  
-**Postconditions:** User can view all past rentals.  
+## 7. Use Case: Manage Movie Catalog
+**Actor:** Admin, Staff  
+**Description:** Add, update, or remove movies from the system.  
+**Precondition:** Admin or staff is logged in.  
+**Postcondition:** Movie catalog is updated.  
 
 **Basic Flow:**  
-1. User navigates to "Rental History".  
-2. System retrieves user's rental records.  
-3. System displays history with titles, dates, and status.  
+1. Admin navigates to “Manage Movies.”  
+2. Admin adds/edits/deletes movie information.  
+3. System validates input and updates the database.  
+4. System confirms action success.  
 
 **Alternative Flows:**  
-- No previous rentals → system displays "No rentals yet".  
+- 2a. Invalid input → System displays error message.  
+- 3a. Database error → System logs issue and notifies admin.
 
 ---
 
-## Use Case 7 – Admin Manage Movie Catalog
-
-**Actor:** Administrator  
-**Description:** Allows admins to add, edit, or remove movies.  
-**Preconditions:** Admin is logged in.  
-**Postconditions:** Catalog reflects changes made by admin.  
+## 8. Use Case: Generate Reports
+**Actor:** Admin, Staff, Owner  
+**Description:** Generate reports on rentals, revenue, and user activity.  
+**Precondition:** User is logged in with permission.  
+**Postcondition:** Report is generated and displayed.  
 
 **Basic Flow:**  
-1. Admin navigates to "Manage Movies".  
-2. Admin adds a new movie OR edits/deletes an existing one.  
-3. System validates changes and updates the catalog.  
-4. Changes are confirmed with a message.  
+1. User navigates to “Reports.”  
+2. User selects report type and time range.  
+3. System retrieves data from the database.  
+4. System displays the report in readable format.  
 
 **Alternative Flows:**  
-- Invalid input → system prompts corrections.  
-- Delete fails → system displays error message.  
+- 3a. No data available → System displays “No data for selected period.”  
+- 4a. System error → User is notified, and error logged.
 
 ---
 
-## Use Case 8 – Admin Generate Reports
-
-**Actor:** Administrator / Staff / Owner  
-**Description:** Generates system reports like rentals, users, or revenue.  
-**Preconditions:** User is logged in with proper privileges.  
-**Postconditions:** Reports are displayed or downloaded.  
-
-**Basic Flow:**  
-1. User selects "Generate Reports".  
-2. User selects report type (rentals, users, revenue).  
-3. System compiles and displays report.  
-4. User can download report if needed.  
-
-**Alternative Flows:**  
-- Report fails to generate → system displays error.  
-- No data → system displays "No data available".  
-
----
-
-## Notes
-
-- These use cases are mapped to functional requirements from Assignment 4.  
-- All alternative flows handle errors or exceptions gracefully.  
-- Use cases support both customer-facing and admin-facing system functionality.  
+### Notes
+- These use cases map directly to the functional requirements (FR-001 to FR-013).  
+- Alternative flows include realistic errors and exceptions to increase robustness.  
+- Actors reflect stakeholder roles from Assignment 4.  
+- This document complements the use case diagram and test cases for Assignment 5.
