@@ -1,15 +1,6 @@
 # 🎬 Use Case Diagram – Aura Reels Movie Rental System
 
-This diagram illustrates how different actors interact with the Aura Reels Movie Rental System.  
-It follows UML use case modeling standards and is aligned with the functional requirements defined in Assignment 4.
-
-## Actors
-- Customer – Registers, logs in, browses, and rents movies.
-- Guest – Browses and searches movies without an account.
-- Admin – Manages movies, users, and reports.
-- Staff – Assists with catalog management and reporting.
-- System Administrator – Maintains system security and configurations.
-- Business Owner – Reviews reports and business analytics.
+This diagram illustrates how different actors interact with the Aura Reels Movie Rental System and follows UML use case modeling standards.
 
 ## Use Case Diagram
 
