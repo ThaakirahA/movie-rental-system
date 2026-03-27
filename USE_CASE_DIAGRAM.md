@@ -1,16 +1,14 @@
-## 🎬 Use Case Diagram – Aura Reels Movie Rental System
-
-The diagram shows how actors interact with the system’s main functions.
-
-### Use Case Diagram
-
-```mermaid
+## 🎬 Use Case Diagram – Aura Reels Movie Rental System The diagram shows how actors interact with the system’s main functions. ### Use Case Diagram
+mermaid
 flowchart LR
     %% Actors
-    Customer[Customer]
-    Admin[Administrator]
-    SysAdmin[System Admin]
-    Owner[Business Owner]
+    subgraph "Actors"
+        Customer[Customer]
+        Admin[Administrator]
+        Staff[Staff]
+        SysAdmin[System Admin]
+        Owner[Business Owner]
+    end
 
     %% System Boundary
     subgraph "Aura Reels Movie Rental System"
@@ -34,14 +32,12 @@ flowchart LR
     Customer --> History
     Customer --> Trailer
 
-    Rent -->|<<include>>| Login
-    Rent -->|<<include>>| Search
-    Rent -->|<<include>>| Notifications
-    Search -->|<<extend>>| Browse
-
     Admin --> ManageCatalog
     Admin --> Reports
     Admin --> ManageUsers
+
+    Staff --> ManageCatalog
+    Staff --> Reports
 
     SysAdmin --> ManageUsers
     SysAdmin --> Reports
