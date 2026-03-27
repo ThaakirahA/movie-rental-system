@@ -1,44 +1,64 @@
 # 🎬 Use Case Diagram – Aura Reels Movie Rental System
 
-This diagram illustrates how different actors interact with the Aura Reels Movie Rental System and follows UML use case modeling standards.
-
-## Use Case Diagram
-
 ```mermaid
-usecaseDiagram
-title Aura Reels Movie Rental System
+flowchart LR
+    %% Actors
+    Customer([Customer])
+    Guest([Guest])
+    Admin([Admin])
+    Staff([Staff])
+    SysAdmin([System Administrator])
+    Owner([Business Owner])
 
-actor Customer
-actor Admin
-actor Staff
-actor "System Administrator" as SysAdmin
-actor "Business Owner" as Owner
-actor Guest
+    %% System boundary
+    subgraph AuraReelsSystem["Aura Reels Movie Rental System"]
+        Register((Register Account))
+        Login((Login))
+        Browse((Browse Movies))
+        Search((Search Movies))
+        Rent((Rent Movie))
+        History((View Rental History))
+        Trailer((Watch Trailer))
+        ManageCatalog((Manage Movie Catalog))
+        ManageUsers((Manage User Accounts))
+        Reports((Generate Reports))
+        Maintenance((System Maintenance))
+        Analytics((View Business Analytics))
+        Payment((Process Payment))
+        Notification((Send Notification))
+    end
 
-Customer --> (Register Account)
-Customer --> (Login)
-Customer --> (Browse Movies)
-Customer --> (Search Movies)
-Customer --> (Rent Movie)
-Customer --> (View Rental History)
-Customer --> (Watch Trailer)
+    %% Customer interactions
+    Customer --> Register
+    Customer --> Login
+    Customer --> Browse
+    Customer --> Search
+    Customer --> Rent
+    Customer --> History
+    Customer --> Trailer
 
-Guest --> (Browse Movies)
-Guest --> (Search Movies)
-Guest --> (Register Account)
+    %% Guest interactions
+    Guest --> Browse
+    Guest --> Search
+    Guest --> Register
 
-Admin --> (Manage Movie Catalog)
-Admin --> (Manage User Accounts)
-Admin --> (Generate Reports)
+    %% Admin interactions
+    Admin --> ManageCatalog
+    Admin --> ManageUsers
+    Admin --> Reports
 
-Staff --> (Manage Movie Catalog)
-Staff --> (Generate Reports)
+    %% Staff interactions
+    Staff --> ManageCatalog
+    Staff --> Reports
 
-SysAdmin --> (Manage User Accounts)
-SysAdmin --> (System Maintenance)
+    %% System admin interactions
+    SysAdmin --> ManageUsers
+    SysAdmin --> Maintenance
 
-Owner --> (Generate Reports)
-Owner --> (View Business Analytics)
+    %% Owner interactions
+    Owner --> Reports
+    Owner --> Analytics
 
-(Rent Movie) ..> (Process Payment) : <<include>>
-(Rent Movie) ..> (Send Notification) : <<include>>
+    %% Include relationships
+    Rent --> Payment
+    Rent --> Notification
