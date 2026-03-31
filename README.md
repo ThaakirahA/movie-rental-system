@@ -167,7 +167,6 @@ These documents focus on use case modelling, use case specifications, and system
 * 📄 [Use Case Specifications](USE_CASE_SPECIFICATIONS.md)
 * ✅ [Test Cases](TEST_CASES.md)
 * 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
-## 🚀 Future Improvements
 
 ### 📕 Assignment 6 Documentation
 
@@ -177,6 +176,7 @@ These documents focus on use case modelling, use case specifications, and system
 * 📝 [Reflection](REFLECTION_A6.md)
 
   ---
+## 🚀 Future Improvements
 Possible future features include:
 
 * Movie ratings and reviews
