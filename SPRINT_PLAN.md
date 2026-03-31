@@ -52,3 +52,21 @@ The following user stories were selected for Sprint 1 as they represent the core
 These user stories were selected because they form the essential workflow of the system. A user must be able to register, log in, browse and search for movies, add movies to a cart, and complete the rental process.
 
 Focusing on these core features ensures that the system delivers a functional MVP within the sprint timeframe while addressing the primary needs of users.
+
+---
+
+## Sprint Backlog (Tasks)
+
+The selected user stories are broken down into smaller development tasks to ensure efficient implementation within the sprint.
+
+| Task ID | Task Description | Assigned To | Estimated Hours | Status |
+|--------|------------------|-------------|------------------|--------|
+| T-001 | Design registration user interface | Dev Team | 4 | To Do |
+| T-002 | Implement user registration backend | Dev Team | 6 | To Do |
+| T-003 | Implement login functionality | Dev Team | 5 | To Do |
+| T-004 | Develop movie listing interface | Dev Team | 4 | To Do |
+| T-005 | Implement search functionality | Dev Team | 5 | To Do |
+| T-006 | Develop rental cart functionality | Dev Team | 5 | To Do |
+| T-007 | Implement rental checkout process | Dev Team | 6 | To Do |
+| T-008 | Integrate frontend with backend API | Dev Team | 5 | To Do |
+| T-009 | Perform system testing and validation | Dev Team | 4 | To Do |
