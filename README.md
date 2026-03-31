@@ -15,6 +15,8 @@ The system provides a digital alternative to traditional movie rental stores by 
 
 The application uses **Angular** for the frontend and **Node.js with Express** for the backend API. Data is stored in **MongoDB** hosted on **MongoDB Atlas**.
 
+> This repository demonstrates the full Software Engineering lifecycle, from system specification and design to Agile planning and testing.
+
 ---
 
 ## 👥 Users of the System
@@ -72,13 +74,10 @@ The system architecture consists of three main components.
 
 ```mermaid
 flowchart LR
-
 Customer[Customer] --> Frontend[Angular Frontend]
 Admin[Administrator] --> Frontend
-
 Frontend --> API[Node.js + Express API]
 API --> Database[(MongoDB Atlas)]
-```
 
 ### Architecture Explanation
 
