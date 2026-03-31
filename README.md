@@ -74,21 +74,23 @@ The system architecture consists of three main components.
 
 ```mermaid
 flowchart LR
-    Customer[Customer] --> Frontend[Angular Frontend]
-    Admin[Administrator] --> Frontend
-    Frontend --> API[Node.js + Express API]
-    API --> Database[(MongoDB Atlas)]
-``` 
+
+Customer[Customer] --> Frontend[Angular Frontend]
+Admin[Administrator] --> Frontend
+
+Frontend --> API[Node.js + Express API]
+API --> Database[(MongoDB Atlas)]
+```
 
 ### Architecture Explanation
 
-**Frontend (Angular)**  
+**Frontend (Angular)**
 Provides the user interface where customers browse movies and administrators manage the catalog.
 
-**Backend (Node.js + Express)**  
+**Backend (Node.js + Express)**
 Processes business logic, authentication, and handles API requests between the frontend and the database.
 
-**Database (MongoDB Atlas)**  
+**Database (MongoDB Atlas)**
 Stores application data including users, movies, and rental records.
 
 ---
