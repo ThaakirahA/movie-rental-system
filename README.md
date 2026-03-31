@@ -134,7 +134,7 @@ Stores application data including users, movies, and rental records.
     ├── USER_STORIES.md
     ├── PRODUCT_BACKLOG.md
     ├── SPRINT_PLAN.md
-    ├── REFLECTION_A6.md
+    ├── REFLECTION_Assignment6.md
     └── images/
 
 ---
