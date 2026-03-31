@@ -20,3 +20,36 @@
 | US-012 | As a system admin, I want user data secured so that system is safe. | Passwords encrypted; secure login enforced. | High |
 
 ---
+
+
+## GitHub Agile Implementation (Evidence)
+
+### GitHub Issues
+
+![Issues Screenshot](images/issues.png)
+
+*Figure 1: GitHub Issues showing user stories (US-001 to US-007).*
+
+---
+
+### Example User Story Issue
+
+![Issue Screenshot](images/issue-detail.png)
+
+*Figure 2: Example user story with acceptance criteria.*
+
+---
+
+### GitHub Project Board
+
+![Project Board](images/project-board.png)
+
+*Figure 3: Agile project board showing workflow (Ready, In Progress, Review, Done).*
+
+---
+
+### Sprint Milestone
+
+![Milestone](images/milestone.png)
+
+*Figure 4: Sprint 1 milestone with assigned user stories.*
