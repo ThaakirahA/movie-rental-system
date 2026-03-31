@@ -10,8 +10,6 @@ This sprint contributes to building a Minimum Viable Product (MVP) by delivering
 
 ---
 
----
-
 ## Selected User Stories for Sprint
 
 The following user stories were selected for Sprint 1 as they represent the core functionality required for the Minimum Viable Product (MVP).
@@ -31,4 +29,4 @@ The following user stories were selected for Sprint 1 as they represent the core
 
 These user stories were selected because they form the essential workflow of the system. A user must be able to register, log in, browse and search for movies, add movies to a cart, and complete the rental process.
 
-Focusing on these core features ensures that the system delivers a functional MVP within the sprint timeframe while addressing the primary needs of users.
+Focusing on these core features ensures that the system delivers a functional MVP within the sprint timeframe while addressing the primary needs of users. 
