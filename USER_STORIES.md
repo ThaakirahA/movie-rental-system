@@ -53,6 +53,7 @@
 ![Milestone](images/milestone.png)
 
 *Figure 4: Sprint 1 milestone with assigned user stories.*
+
 ---
 
 ### Sprint Milestone with issue
@@ -60,3 +61,5 @@
 ![Milestone](images/Milestone-with-issue.png)
 
 *Figure 5: Sprint 1 milestone with issue.*
+
+---
