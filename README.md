@@ -23,19 +23,19 @@ The application uses **Angular** for the frontend and **Node.js with Express** f
 
 ### Customer
 
-* Register an account
-* Login to the system
-* Browse available movies
-* Search for movies
-* Rent movies
-* View rental history
+- Register an account
+- Login to the system
+- Browse available movies
+- Search for movies
+- Rent movies
+- View rental history
 
 ### Administrator
 
-* Add new movies
-* Update movie details
-* Delete movies
-* Manage movie availability
+- Add new movies
+- Update movie details
+- Delete movies
+- Manage movie availability
 
 ---
 
@@ -43,26 +43,26 @@ The application uses **Angular** for the frontend and **Node.js with Express** f
 
 ### Frontend
 
-* Angular
-* HTML
-* CSS
-* TypeScript
+- Angular
+- HTML
+- CSS
+- TypeScript
 
 ### Backend
 
-* Node.js
-* Express.js
-* REST API
+- Node.js
+- Express.js
+- REST API
 
 ### Database
 
-* MongoDB
-* MongoDB Atlas
+- MongoDB
+- MongoDB Atlas
 
 ### Version Control
 
-* Git
-* GitHub
+- Git
+- GitHub
 
 ---
 
@@ -74,33 +74,34 @@ The system architecture consists of three main components.
 
 ```mermaid
 flowchart LR
-Customer[Customer] --> Frontend[Angular Frontend]
-Admin[Administrator] --> Frontend
-Frontend --> API[Node.js + Express API]
-API --> Database[(MongoDB Atlas)]
+    Customer[Customer] --> Frontend[Angular Frontend]
+    Admin[Administrator] --> Frontend
+    Frontend --> API[Node.js + Express API]
+    API --> Database[(MongoDB Atlas)]
+```
 
 ### Architecture Explanation
 
-**Frontend (Angular)**
+**Frontend (Angular)**  
 Provides the user interface where customers browse movies and administrators manage the catalog.
 
-**Backend (Node.js + Express)**
+**Backend (Node.js + Express)**  
 Processes business logic, authentication, and handles API requests between the frontend and the database.
 
-**Database (MongoDB Atlas)**
+**Database (MongoDB Atlas)**  
 Stores application data including users, movies, and rental records.
 
 ---
 
 ## 🔄 System Workflow
 
-1. User opens the web application.
-2. User registers or logs into the system.
-3. User browses the movie catalog.
-4. User searches or selects a movie.
-5. The system processes the rental request.
-6. Rental information is stored in the database.
-7. The system confirms the rental to the user.
+1. User opens the web application
+2. User registers or logs into the system
+3. User browses the movie catalog
+4. User searches or selects a movie
+5. The system processes the rental request
+6. Rental information is stored in the database
+7. The system confirms the rental to the user
 
 ---
 
@@ -146,8 +147,8 @@ This project contains documentation created for multiple assignments in the Soft
 
 These documents describe the initial system design and architecture.
 
-* 📄 [System Specification](SPECIFICATION.md)
-* 🏗 [System Architecture](ARCHITECTURE.md)
+- 📄 [System Specification](SPECIFICATION.md)
+- 🏗 [System Architecture](ARCHITECTURE.md)
 
 ---
 
@@ -155,9 +156,9 @@ These documents describe the initial system design and architecture.
 
 These documents focus on stakeholder analysis and system requirements.
 
-* 👥 [Stakeholder Analysis](STAKEHOLDER_ANALYSIS.md)
-* ⚙️ [System Requirements](SYSTEM_REQUIREMENTS.md)
-* 📝 [Reflection](REFLECTION.md)
+- 👥 [Stakeholder Analysis](STAKEHOLDER_ANALYSIS.md)
+- ⚙️ [System Requirements](SYSTEM_REQUIREMENTS.md)
+- 📝 [Reflection](REFLECTION.md)
 
 ---
 
@@ -165,29 +166,33 @@ These documents focus on stakeholder analysis and system requirements.
 
 These documents focus on use case modelling, use case specifications, and system testing.
 
-* 🎭 [Use Case Diagram](USE_CASE_DIAGRAM.md)
-* 📄 [Use Case Specifications](USE_CASE_SPECIFICATIONS.md)
-* ✅ [Test Cases](TEST_CASES.md)
-* 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
+- 🎭 [Use Case Diagram](USE_CASE_DIAGRAM.md)
+- 📄 [Use Case Specifications](USE_CASE_SPECIFICATIONS.md)
+- ✅ [Test Cases](TEST_CASES.md)
+- 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
 
-  ---
+---
 
 ### 📕 Assignment 6 Documentation
 
-* 🧾 [User Stories](USER_STORIES.md)
-* 📊 [Product Backlog](PRODUCT_BACKLOG.md)
-* 🚀 [Sprint Plan](SPRINT_PLAN.md)
-* 📝 [Reflection](REFLECTION_A6.md)
+These documents demonstrate the application of Agile methodology, including user story creation, backlog prioritisation, sprint planning, and reflection.
 
-  ---
+- 🧾 [User Stories](USER_STORIES.md)
+- 📊 [Product Backlog](PRODUCT_BACKLOG.md)
+- 🚀 [Sprint Plan](SPRINT_PLAN.md)
+- 📝 [Reflection – Assignment 6](REFLECTION_A6.md)
+
+---
+
 ## 🚀 Future Improvements
+
 Possible future features include:
 
-* Movie ratings and reviews
-* Online payment integration
-* Movie recommendation system
-* Watch movie trailers
-* Mobile application support
+- Movie ratings and reviews
+- Online payment integration
+- Movie recommendation system
+- Watch movie trailers
+- Mobile application support
 
 ---
 
@@ -195,7 +200,7 @@ Possible future features include:
 
 ThaakirahA
 
-Software Development 
+Software Development
 
 Honours Student – Software Engineering
 
