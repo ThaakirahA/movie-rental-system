@@ -7,3 +7,28 @@
 The goal of this 2-week sprint is to develop the core functionality of the Aura Reels Movie Rental System, including user registration, login, browsing movies, searching for movies, adding movies to a rental cart, and completing the rental process.
 
 This sprint contributes to building a Minimum Viable Product (MVP) by delivering the essential features required for users to interact with the system and perform basic operations successfully. These features form the foundation of the system and ensure that the primary user needs are met.
+
+---
+
+---
+
+## Selected User Stories for Sprint
+
+The following user stories were selected for Sprint 1 as they represent the core functionality required for the Minimum Viable Product (MVP).
+
+| Story ID | User Story | Priority |
+|----------|-----------|----------|
+| US-001 | Register account | Must-have |
+| US-002 | Login to system | Must-have |
+| US-003 | Browse movies | Must-have |
+| US-004 | Search movies | Must-have |
+| US-006 | Add to rental cart | Must-have |
+| US-007 | Rent movie | Must-have |
+
+---
+
+## Selection Justification
+
+These user stories were selected because they form the essential workflow of the system. A user must be able to register, log in, browse and search for movies, add movies to a cart, and complete the rental process.
+
+Focusing on these core features ensures that the system delivers a functional MVP within the sprint timeframe while addressing the primary needs of users.
