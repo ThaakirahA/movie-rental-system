@@ -169,6 +169,12 @@ These documents focus on use case modelling, use case specifications, and system
 * 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
 ## 🚀 Future Improvements
 
+### 📕 Assignment 6 Documentation
+
+* 🧾 [User Stories](USER_STORIES.md)
+* 📊 [Product Backlog](PRODUCT_BACKLOG.md)
+* 🚀 [Sprint Plan](SPRINT_PLAN.md)
+* 📝 [Reflection](REFLECTION_A6.md)
 Possible future features include:
 
 * Movie ratings and reviews
