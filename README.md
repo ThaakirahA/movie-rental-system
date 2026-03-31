@@ -107,7 +107,6 @@ Stores application data including users, movies, and rental records.
 
 ## 📂 Project Structure
 
-```
 movie-rental-system
 │
 ├── frontend (Angular Application)
@@ -130,6 +129,12 @@ movie-rental-system
 ├── USE_CASE_SPECIFICATIONS.md
 ├── TEST_CASES.md
 ├── REFLECTION_ASSIGNMENT5.md
+├── USER_STORIES.md
+├── PRODUCT_BACKLOG.md
+├── SPRINT_PLAN.md
+├── REFLECTION_A6.md
+├── images/
+
 ```
 
 ---
