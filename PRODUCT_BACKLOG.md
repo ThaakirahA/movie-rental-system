@@ -47,14 +47,14 @@ Story points are assigned using a simplified Fibonacci scale:
 This helps estimate development effort and plan realistic sprint workloads.
 
 ---
-
 ## Traceability to Requirements
 
-Each backlog item is derived from Assignment 4 requirements and Assignment 5 use cases.
+Each backlog item is derived from system requirements (Assignment 4) and use cases (Assignment 5).
 
 Examples:
-- US-004 (Search movies) → Functional requirement: search functionality  
-- US-007 (Rent movie) → Functional requirement: rental process  
-- US-012 (Secure user data) → Non-functional requirement: security  
+- US-004 (Search movies) → Functional Requirement: Search functionality (Assignment 4)
+- US-007 (Rent movie) → Use Case: Rent Movie (Assignment 5)
+- US-006 (Add to cart) → Use Case: Add to Cart (Assignment 5)
+- US-012 (Secure user data) → Non-functional Requirement: Security (Assignment 4)
 
-This ensures alignment between stakeholder needs, system requirements, and Agile planning.
+This ensures alignment between stakeholder needs, system requirements, use cases, and Agile planning.
