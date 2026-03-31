@@ -107,33 +107,33 @@ Stores application data including users, movies, and rental records.
 
 ## 📂 Project Structure
 
-movie-rental-system
-│
-├── frontend (Angular Application)
-│ ├── components
-│ ├── services
-│ └── models
-│
-├── backend (Node.js API)
-│ ├── controllers
-│ ├── routes
-│ └── models
-│
-├── README.md
-├── SPECIFICATION.md
-├── ARCHITECTURE.md
-├── STAKEHOLDER_ANALYSIS.md
-├── SYSTEM_REQUIREMENTS.md
-├── REFLECTION.md
-├── USE_CASE_DIAGRAM.md
-├── USE_CASE_SPECIFICATIONS.md
-├── TEST_CASES.md
-├── REFLECTION_ASSIGNMENT5.md
-├── USER_STORIES.md
-├── PRODUCT_BACKLOG.md
-├── SPRINT_PLAN.md
-├── REFLECTION_A6.md
-├── images/ ```
+    movie-rental-system
+    │
+    ├── frontend (Angular Application)
+    │   ├── components
+    │   ├── services
+    │   └── models
+    │
+    ├── backend (Node.js API)
+    │   ├── controllers
+    │   ├── routes
+    │   └── models
+    │
+    ├── README.md
+    ├── SPECIFICATION.md
+    ├── ARCHITECTURE.md
+    ├── STAKEHOLDER_ANALYSIS.md
+    ├── SYSTEM_REQUIREMENTS.md
+    ├── REFLECTION.md
+    ├── USE_CASE_DIAGRAM.md
+    ├── USE_CASE_SPECIFICATIONS.md
+    ├── TEST_CASES.md
+    ├── REFLECTION_ASSIGNMENT5.md
+    ├── USER_STORIES.md
+    ├── PRODUCT_BACKLOG.md
+    ├── SPRINT_PLAN.md
+    ├── REFLECTION_A6.md
+    └── images/
 
 ---
 
