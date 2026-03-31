@@ -175,6 +175,8 @@ These documents focus on use case modelling, use case specifications, and system
 * 📊 [Product Backlog](PRODUCT_BACKLOG.md)
 * 🚀 [Sprint Plan](SPRINT_PLAN.md)
 * 📝 [Reflection](REFLECTION_A6.md)
+
+  ---
 Possible future features include:
 
 * Movie ratings and reviews
