@@ -57,6 +57,6 @@
 
 ### Sprint Milestone with issue
 
-![Milestone](images/milestone-with-issue.png)
+![Milestone](images/Milestone-with-issue.png)
 
 *Figure 5: Sprint 1 milestone with issue.*
