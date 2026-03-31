@@ -168,6 +168,8 @@ These documents focus on use case modelling, use case specifications, and system
 * ✅ [Test Cases](TEST_CASES.md)
 * 📝 [Reflection – Assignment 5](REFLECTION_ASSIGNMENT5.md)
 
+  ---
+
 ### 📕 Assignment 6 Documentation
 
 * 🧾 [User Stories](USER_STORIES.md)
