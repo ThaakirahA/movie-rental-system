@@ -77,8 +77,7 @@ flowchart LR
     Customer[Customer] --> Frontend[Angular Frontend]
     Admin[Administrator] --> Frontend
     Frontend --> API[Node.js + Express API]
-    API --> Database[(MongoDB Atlas)]
-```
+    API --> Database[(MongoDB Atlas)]``` 
 
 ### Architecture Explanation
 
