@@ -133,9 +133,7 @@ movie-rental-system
 ├── PRODUCT_BACKLOG.md
 ├── SPRINT_PLAN.md
 ├── REFLECTION_A6.md
-├── images/
-
-```
+├── images/ ```
 
 ---
 
