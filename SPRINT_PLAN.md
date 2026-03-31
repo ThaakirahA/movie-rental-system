@@ -70,3 +70,11 @@ The selected user stories are broken down into smaller development tasks to ensu
 | T-007 | Implement rental checkout process | Dev Team | 6 | To Do |
 | T-008 | Integrate frontend with backend API | Dev Team | 5 | To Do |
 | T-009 | Perform system testing and validation | Dev Team | 4 | To Do |
+
+---
+
+## Sprint Contribution to MVP
+
+This sprint focuses on delivering the core features required for a functional Movie Rental System. By implementing user registration, login, browsing, searching, adding to cart, and rental functionality, the system will support the primary user workflow from start to finish.
+
+These features ensure that users can interact with the system effectively and complete key actions without limitations. As a result, this sprint delivers a working Minimum Viable Product (MVP) that satisfies essential user needs and provides a solid foundation for future enhancements.
