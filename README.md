@@ -134,7 +134,7 @@ Stores application data including users, movies, and rental records.
     ├── USER_STORIES.md
     ├── PRODUCT_BACKLOG.md
     ├── SPRINT_PLAN.md
-    ├── REFLECTION_Assignment6.md
+    ├── REFLECTION_A6.md
     └── images/
 
 ---
@@ -182,7 +182,7 @@ These documents demonstrate the application of Agile methodology, including user
 - 🧾 [User Stories](USER_STORIES.md)
 - 📊 [Product Backlog](PRODUCT_BACKLOG.md)
 - 🚀 [Sprint Plan](SPRINT_PLAN.md)
-- 📝 [Reflection – Assignment 6](REFLECTION_Assignment6.md)
+- 📝 [Reflection – Assignment 6](REFLECTION_A6.md)
 
 ---
 
