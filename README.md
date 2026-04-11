@@ -186,6 +186,19 @@ These documents demonstrate the application of Agile methodology, including user
 
 ---
 
+
+## 🧩 Kanban Board Implementation
+
+A custom Kanban board was created using the **Team Planning template** in GitHub Projects to manage Agile workflows for the system.
+
+The board was customised by adding additional columns such as **Testing** and **Blocked** to improve workflow visibility and track task progress more effectively.
+
+All user stories from Assignment 6 were linked as GitHub Issues and organised across the board based on their current development status. Tasks were assigned to the developer using @mentions, and labels such as **feature** were used to categorise work items.
+
+The Kanban board provides a clear visual representation of task progress, supports efficient workflow management, and aligns with Agile development practices.
+
+---
+
 ## 🚀 Future Improvements
 
 Possible future features include:
