@@ -186,6 +186,7 @@ These documents demonstrate the application of Agile methodology, including user
 
 ---
 
+### 📕 Assignment 7 Documentation
 
 ## 🧩 Kanban Board Implementation
 
