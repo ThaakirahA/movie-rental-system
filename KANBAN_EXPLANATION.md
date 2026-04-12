@@ -38,9 +38,9 @@ It also promotes transparency and accountability by clearly showing task ownersh
 
 ### Full Workflow View
 
-![Kanban Board 1](images/kanban-board-1)
+![Kanban Board 1](images/kanban-board-1.png)
 
-![Kanban Board 2](images/kanban-board-2)
+![Kanban Board 2](images/kanban-board-2.png)
 
 *Figures: Kanban board showing workflow columns including Ready, In Progress, Review, Testing, Blocked, and Done.*
 
