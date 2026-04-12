@@ -184,9 +184,16 @@ These documents demonstrate the application of Agile methodology, including user
 - 🚀 [Sprint Plan](SPRINT_PLAN.md)
 - 📝 [Reflection – Assignment 6](REFLECTION_A6.md)
 
+
 ---
 
-### 📕 Assignment 7 Documentation
+### 📗 Assignment 7 Documentation
+
+These documents demonstrate the analysis of GitHub project templates, implementation of a customised Kanban board, and reflection on Agile workflow management.
+
+* 📊 [Template Analysis](template_analysis.md)
+* 📋 [Kanban Explanation](kanban_explanation.md)
+* 📝 [Reflection – Assignment 7](reflection_A7.md)
 
 ## 🧩 Kanban Board Implementation
 
