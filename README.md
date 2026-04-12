@@ -191,9 +191,9 @@ These documents demonstrate the application of Agile methodology, including user
 
 These documents demonstrate the analysis of GitHub project templates, implementation of a customised Kanban board, and reflection on Agile workflow management.
 
-* 📊 [Template Analysis](template_analysis.md)
-* 📋 [Kanban Explanation](kanban_explanation.md)
-* 📝 [Reflection – Assignment 7](reflection_A7.md)
+* 📊 [Template Analysis](TEMPLATE_ANALYSIS.md)
+* 📋 [Kanban Explanation](KANBAN_EXPLANATION.md)
+* 📝 [Reflection – Assignment 7](REFLECTION_A7.md)
 
 ## 🧩 Kanban Board Implementation
 
