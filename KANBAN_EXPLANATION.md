@@ -31,3 +31,23 @@ The Kanban board supports Agile principles by enabling continuous delivery, flex
 It also promotes transparency and accountability by clearly showing task ownership, progress, and current status. This ensures that development remains organised and aligned with project goals.
 
 ---
+
+---
+
+## 📸 Kanban Board Evidence
+
+### Full Workflow View
+
+![Kanban Board 1](images/kanban-board-1)
+
+![Kanban Board 2](images/kanban-board-2)
+
+*Figures: Kanban board showing workflow columns including Ready, In Progress, Review, Testing, Blocked, and Done.*
+
+---
+
+### Task Assignments and Labels
+
+![Assignments](images/assignees.png)
+
+*Figure: Issues showing assigned user and labels such as feature.*
