@@ -1,4 +1,7 @@
-# 🎬 State Transition Diagrams – Aura Reels Movie Rental System
+# 🎬 State Transition Diagrams  
+## Aura Reels Movie Rental System
+
+This document presents the state transition diagrams for key objects in the Aura Reels Movie Rental System. Each diagram illustrates how objects change states in response to user actions, system events, and administrative operations.
 
 ---
 
@@ -23,7 +26,7 @@ stateDiagram-v2
 stateDiagram-v2
     [*] --> Unregistered
     Unregistered --> Registered : User submits registration
-    Registered --> Active : Email/registration validated
+    Registered --> Active : Registration validated
     Active --> LoggedIn : User logs in
     LoggedIn --> Active : User logs out
     Active --> Suspended : Admin suspends account
@@ -60,7 +63,6 @@ stateDiagram-v2
     Active --> Completed : Rental period ends
     Active --> Cancelled : Admin/user cancels before activation
 ```
-
 
 ---
 
@@ -124,3 +126,5 @@ stateDiagram-v2
     Ended --> Unloaded : User closes trailer
     Error --> Unloaded : User retries / closes trailer
 ```
+
+---
