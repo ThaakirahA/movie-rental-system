@@ -61,7 +61,7 @@ stateDiagram-v2
     Active --> Cancelled : Admin/user cancels before activation
 ```
 
-```
+
 ---
 
 ## 5. Payment Object
