@@ -9,16 +9,17 @@ This section models how key system objects change state based on user actions, s
 
 ## 1. Movie
 
-```mermaid
+---
 stateDiagram-v2
     [*] --> Available
-    Available --> Reserved : Add to cart
-    Reserved --> Available : Removed / timeout
-    Reserved --> Rented : Rental confirmed
-    Rented --> Available : Rental ended
-    Available --> Unavailable : Admin disables
-    Unavailable --> Available : Admin restores
-```
+
+    Available --> Reserved : Add
+    Reserved --> Rented : Confirm
+    Reserved --> Available : Remove
+    Rented --> Available : End
+
+    Available --> Unavailable : Disable
+    Unavailable --> Available : Restore
 
 ---
 
