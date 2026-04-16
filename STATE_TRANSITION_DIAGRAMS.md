@@ -9,7 +9,7 @@ This section models how key system objects change state based on user actions, s
 
 ## 1. Movie
 
----
+```mermaid
 stateDiagram-v2
     [*] --> Available
 
@@ -20,6 +20,7 @@ stateDiagram-v2
 
     Available --> Unavailable : Disable
     Unavailable --> Available : Restore
+```
 
 ---
 
