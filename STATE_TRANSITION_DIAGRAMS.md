@@ -60,4 +60,67 @@ stateDiagram-v2
     Active --> Completed : Rental period ends
     Active --> Cancelled : Admin/user cancels before activation
 ```
+
+```
+---
+
+## 5. Payment Object
+
+```mermaid
+stateDiagram-v2
+    [*] --> Initiated
+    Initiated --> Processing : User submits payment
+    Processing --> Successful : [payment approved]
+    Processing --> Failed : [payment declined]
+    Failed --> Processing : User retries payment
+    Successful --> Recorded : System stores payment record
+    Recorded --> [*]
+```
+
+---
+
+## 6. User Session Object
+
+```mermaid
+stateDiagram-v2
+    [*] --> Inactive
+    Inactive --> Active : User logs in
+    Active --> Idle : No activity detected
+    Idle --> Active : User interacts with system
+    Active --> Expired : Session timeout
+    Idle --> Expired : Session timeout
+    Active --> Inactive : User logs out
+    Expired --> Inactive : Session cleared
+```
+
+---
+
+## 7. Report Object
+
+```mermaid
+stateDiagram-v2
+    [*] --> Requested
+    Requested --> Generating : Admin/Owner requests report
+    Generating --> Generated : Report data compiled
+    Generated --> Viewed : User opens report
+    Generated --> Exported : User downloads report
+    Viewed --> Archived : Report stored for later use
+    Exported --> Archived : Report stored for later use
+```
+
+---
+
+## 8. Trailer Object
+
+```mermaid
+stateDiagram-v2
+    [*] --> Unloaded
+    Unloaded --> Loading : User selects watch trailer
+    Loading --> Playing : Trailer loaded successfully
+    Loading --> Error : Trailer failed to load
+    Playing --> Paused : User pauses trailer
+    Paused --> Playing : User resumes trailer
+    Playing --> Ended : Trailer finishes
+    Ended --> Unloaded : User closes trailer
+    Error --> Unloaded : User retries / closes trailer
 ```
