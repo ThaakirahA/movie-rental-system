@@ -207,6 +207,18 @@ The Kanban board provides a clear visual representation of task progress, suppor
 
 ---
 
+### 📘 Assignment 8 Documentation
+
+These documents model the dynamic behaviour of the system using object state transitions and activity workflows, while also showing traceability to earlier requirements and Agile planning.
+
+* 🔄 [State Transition Diagrams](STATE_TRANSITION_DIAGRAMS.md)
+* 📝 [State Transition Explanations](STATE_TRANSITION_EXPLANATIONS.md)
+* ▶️ [Activity Diagrams](ACTIVITY_DIAGRAMS.md)
+* 📄 [Activity Diagram Explanations](ACTIVITY_DIAGRAM_EXPLANATIONS.md)
+* 🔗 [Integration and Traceability](INTEGRATION_TRACEABILITY.md)
+
+---
+
 ## 🚀 Future Improvements
 
 Possible future features include:
