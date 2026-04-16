@@ -1,130 +1,137 @@
 # 🎬 State Transition Diagrams  
 ## Aura Reels Movie Rental System
 
-This document presents the state transition diagrams for key objects in the Aura Reels Movie Rental System. Each diagram illustrates how objects change states in response to user actions, system events, and administrative operations.
+This section models how key system objects change state based on user actions, system events, and administrative controls.
 
 ---
 
-## 1. Movie Object
+# 🎥 Core User Interaction Objects
+
+## 1. Movie
 
 ```mermaid
 stateDiagram-v2
     [*] --> Available
-    Available --> Reserved : User adds to cart
-    Reserved --> Available : Cart expired / removed from cart
+    Available --> Reserved : Add to cart
+    Reserved --> Available : Removed / timeout
     Reserved --> Rented : Rental confirmed
-    Rented --> Available : Rental period ended
-    Available --> Unavailable : Admin disables movie
-    Unavailable --> Available : Admin restores movie
+    Rented --> Available : Rental ended
+    Available --> Unavailable : Admin disables
+    Unavailable --> Available : Admin restores
 ```
 
 ---
 
-## 2. User Account Object
-
-```mermaid
-stateDiagram-v2
-    [*] --> Unregistered
-    Unregistered --> Registered : User submits registration
-    Registered --> Active : Registration validated
-    Active --> LoggedIn : User logs in
-    LoggedIn --> Active : User logs out
-    Active --> Suspended : Admin suspends account
-    Suspended --> Active : Admin reactivates account
-```
-
----
-
-## 3. Rental Cart Object
-
-```mermaid
-stateDiagram-v2
-    [*] --> Empty
-    Empty --> Active : User adds movie
-    Active --> Updated : User adds/removes movie
-    Updated --> Active : Cart saved
-    Active --> CheckedOut : User proceeds to checkout
-    CheckedOut --> Empty : Rental completed
-    Active --> Abandoned : User leaves without checkout
-    Abandoned --> Empty : Cart cleared
-```
-
----
-
-## 4. Rental Object
+## 2. Rental
 
 ```mermaid
 stateDiagram-v2
     [*] --> Created
-    Created --> PendingPayment : User confirms checkout
+    Created --> PendingPayment : Checkout
     PendingPayment --> Confirmed : [payment valid]
     PendingPayment --> Cancelled : [payment failed]
     Confirmed --> Active : Rental starts
-    Active --> Completed : Rental period ends
-    Active --> Cancelled : Admin/user cancels before activation
+    Active --> Completed : Rental ends
+    Active --> Cancelled : Cancel before activation
 ```
 
 ---
 
-## 5. Payment Object
+## 3. Rental Cart
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Initiated
-    Initiated --> Processing : User submits payment
-    Processing --> Successful : [payment approved]
-    Processing --> Failed : [payment declined]
-    Failed --> Processing : User retries payment
-    Successful --> Recorded : System stores payment record
-    Recorded --> [*]
+    [*] --> Empty
+    Empty --> Active : Add movie
+    Active --> Updated : Modify cart
+    Updated --> Active
+    Active --> CheckedOut : Checkout
+    CheckedOut --> Empty
+    Active --> Abandoned
+    Abandoned --> Empty
 ```
 
 ---
 
-## 6. User Session Object
+# 👤 User & Session Management
+
+## 4. User Account
+
+```mermaid
+stateDiagram-v2
+    [*] --> Unregistered
+    Unregistered --> Registered
+    Registered --> Active
+    Active --> LoggedIn
+    LoggedIn --> Active
+    Active --> Suspended
+    Suspended --> Active
+```
+
+---
+
+## 5. User Session
 
 ```mermaid
 stateDiagram-v2
     [*] --> Inactive
-    Inactive --> Active : User logs in
-    Active --> Idle : No activity detected
-    Idle --> Active : User interacts with system
-    Active --> Expired : Session timeout
-    Idle --> Expired : Session timeout
-    Active --> Inactive : User logs out
-    Expired --> Inactive : Session cleared
+    Inactive --> Active : Login
+    Active --> Idle
+    Idle --> Active
+    Active --> Expired
+    Idle --> Expired
+    Active --> Inactive : Logout
+    Expired --> Inactive
 ```
 
 ---
 
-## 7. Report Object
+# 💳 Transaction & System Processes
+
+## 6. Payment
+
+```mermaid
+stateDiagram-v2
+    [*] --> Initiated
+    Initiated --> Processing
+    Processing --> Successful
+    Processing --> Failed
+    Failed --> Processing
+    Successful --> Recorded
+```
+
+---
+
+## 7. Report
 
 ```mermaid
 stateDiagram-v2
     [*] --> Requested
-    Requested --> Generating : Admin/Owner requests report
-    Generating --> Generated : Report data compiled
-    Generated --> Viewed : User opens report
-    Generated --> Exported : User downloads report
-    Viewed --> Archived : Report stored for later use
-    Exported --> Archived : Report stored for later use
+    Requested --> Generating
+    Generating --> Generated
+    Generated --> Viewed
+    Generated --> Exported
+    Viewed --> Archived
+    Exported --> Archived
 ```
 
 ---
 
-## 8. Trailer Object
+# 🎞 Media Interaction
+
+## 8. Trailer
 
 ```mermaid
 stateDiagram-v2
     [*] --> Unloaded
-    Unloaded --> Loading : User selects watch trailer
-    Loading --> Playing : Trailer loaded successfully
-    Loading --> Error : Trailer failed to load
-    Playing --> Paused : User pauses trailer
-    Paused --> Playing : User resumes trailer
-    Playing --> Ended : Trailer finishes
-    Ended --> Unloaded : User closes trailer
-    Error --> Unloaded : User retries / closes trailer
+    Unloaded --> Loading
+    Loading --> Playing
+    Loading --> Error
+    Playing --> Paused
+    Paused --> Playing
+    Playing --> Ended
+    Ended --> Unloaded
+    Error --> Unloaded
 ```
 
 ---
