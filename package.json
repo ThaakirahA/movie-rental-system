@@ -1,0 +1,13 @@
+{
+  "name": "movie-rental-system",
+  "version": "1.0.0",
+  "description": "Assignment 10 creational patterns implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
