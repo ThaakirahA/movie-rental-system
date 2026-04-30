@@ -217,7 +217,54 @@ These documents model the dynamic behaviour of the system using object state tra
 * 📄 [Activity Diagram Explanations](ACTIVITY_DIAGRAM_EXPLANATIONS.md)
 * 🔗 [Integration and Traceability](INTEGRATION_TRACEABILITY.md)
 
+------
+
+### 📘 Assignment 9 Documentation
+
+* 📊 Domain Model
+* 🧱 Class Diagram
+* 📝 Reflection – Assignment 9
+
+------
+
+
+
+### 📘 Assignment 10 Documentation
+
+This section demonstrates the transformation of UML class diagrams into working code, including the implementation of creational design patterns and unit testing.
+
+#### 🔧 Implementation
+
+The system was implemented using **JavaScript (Node.js)** due to its simplicity, flexibility, and alignment with modern web development practices. The implementation closely follows the UML Class Diagram developed in Assignment 9, ensuring consistency between design and code.
+
+#### 🧱 Creational Design Patterns
+
+The following creational design patterns were implemented to demonstrate different object creation strategies:
+
+- **Simple Factory** – Used to centralize object creation for different vehicle types (Car, Bike, Truck), simplifying instantiation logic.
+- **Factory Method** – Used for payment processing to allow different payment types (Credit Card, PayPal) to be created through a common interface.
+- **Abstract Factory** – Used to create families of related objects (Windows and Mac UI components) without specifying their concrete classes.
+- **Builder** – Used to construct complex objects (Pizza) step-by-step, allowing flexible object configuration.
+- **Prototype** – Used to clone existing objects (Circle) to improve efficiency and avoid repeated object creation.
+- **Singleton** – Used to ensure a single instance of the database connection, preventing multiple connections and maintaining consistency.
+
+#### 🧪 Testing
+
+Unit tests were written using **Jest** to verify:
+- Correct object creation for each pattern
+- Proper initialization of attributes
+- Edge case handling (invalid inputs, cloning behaviour, singleton enforcement)
+
+Test coverage was generated to ensure that all patterns were properly validated.
+
+#### 📂 Project Structure
+
+- `/src` – Core class implementations based on UML design
+- `/creational_patterns` – Implementations of all six creational design patterns
+- `/tests` – Unit tests validating each pattern and its behaviour
+
 ---
+
 
 ## 🚀 Future Improvements
 
