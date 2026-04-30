@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777586794446" clover="3.2.0">
-  <project timestamp="1777586794446" name="All files">
+<coverage generated="1777587104901" clover="3.2.0">
+  <project timestamp="1777587104902" name="All files">
     <metrics statements="42" coveredstatements="37" conditionals="12" coveredconditionals="10" methods="25" coveredmethods="20" elements="79" coveredelements="67" complexity="0" loc="42" ncloc="42" packages="1" files="6" classes="6"/>
     <file name="abstractFactory.js" path="C:\Users\akira\Downloads\movie-rental-system\creational_patterns\abstractFactory.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
