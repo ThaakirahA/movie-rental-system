@@ -265,6 +265,29 @@ Test coverage was generated to ensure that all patterns were properly validated.
 
 ---
 
+### 📘 Assignment 11 Documentation
+
+This section introduces a repository layer to manage persistence of domain objects.
+
+#### 🗄 Repository Design
+A generic repository interface was created to support CRUD operations, ensuring consistency across all entities.
+
+#### ⚙️ In-Memory Implementation
+An in-memory storage approach using JavaScript objects was implemented for simplicity and fast testing.
+
+#### 🔄 Abstraction Mechanism
+A Factory Pattern was used to allow switching between different storage implementations (e.g., in-memory, database).
+
+#### 🔮 Future-Proofing
+A stub for a database repository was included to demonstrate how the system can be extended to support persistent storage.
+
+#### 📂 Structure
+- `/repositories` – Interfaces and implementations
+- `/repositories/inmemory` – In-memory storage
+- `/factories` – Repository factory
+- `/tests` – Repository tests
+
+---
 
 ## 🚀 Future Improvements
 
