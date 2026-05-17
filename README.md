@@ -319,6 +319,8 @@ Implemented endpoints include:
 - POST /api/rentals
 - POST /api/rentals/{id}/complete
 
+ASSIGNMENT12_SCREENSHOTS.md
+
 #### 📄 Swagger/OpenAPI Documentation
 
 Swagger UI was integrated to provide interactive API documentation and endpoint testing.
