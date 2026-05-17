@@ -319,7 +319,7 @@ Implemented endpoints include:
 - POST /api/rentals
 - POST /api/rentals/{id}/complete
 
-ASSIGNMENT12_SCREENSHOTS.md
+📄 [SCREENSHOTS](ASSIGNMENT12_SCREENSHOTS.md)
 
 #### 📄 Swagger/OpenAPI Documentation
 
