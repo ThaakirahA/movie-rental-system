@@ -1,0 +1,11 @@
+# Stakeholder Analysis – Aura Reels Movie Rental System
+
+| Stakeholder          | Role                                                       | Key Concerns                                              | Pain Points                                      | Success Metrics                                      |
+| -------------------- | ---------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------- |
+| Customers            | Users who browse and rent movies from the system           | Fast search, easy navigation, secure rentals              | Slow search results, difficulty finding movies    | Complete rental within ≤ 2 minutes; search ≤ 2 sec    |
+| Staff                | Manage movie catalog and assist users                      | Easy updating of movie data                              | Manual updates are time-consuming                 | Update movie listings within ≤ 1 minute               |
+| Administrators       | Oversee system operations and user management              | System reliability, user control                         | Managing users manually is inefficient            | System operates with ≤ 1% error rate                  |
+| System Administrator | Handles deployment, server maintenance, and uptime         | Security, uptime, system stability                       | Server downtime and crashes                       | Maintain ≥ 99% system uptime                          |
+| Developers           | Maintain and enhance the system                            | Clean code, modular design, clear documentation          | Difficult debugging and system updates            | New features deployed without breaking existing ones  |
+| Business Owners      | Ensure system growth and profitability                     | User engagement, increased rentals                       | Low user engagement                              | Increase rentals and active users monthly             |
+| Payment Gateway      | Processes online payments                                  | Secure, fast transactions                                | Failed or delayed payments                        | ≥ 95% successful transactions                         |

@@ -1,0 +1,123 @@
+openapi: 3.0.0
+
+info:
+  title: Aura Reels Movie Rental API
+  version: 1.0.0
+  description: REST API for managing movies, users, and rentals.
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+
+  /:
+    get:
+      summary: API status
+      responses:
+        '200':
+          description: API running message
+
+  /api/movies:
+    get:
+      summary: Get all movies
+      responses:
+        '200':
+          description: List of movies
+
+    post:
+      summary: Create a new movie
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                movieId:
+                  type: string
+                title:
+                  type: string
+                genre:
+                  type: string
+                description:
+                  type: string
+                rating:
+                  type: string
+                status:
+                  type: string
+
+      responses:
+        '201':
+          description: Movie created successfully
+
+  /api/users:
+    get:
+      summary: Get all users
+      responses:
+        '200':
+          description: List of users
+
+    post:
+      summary: Create a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+
+      responses:
+        '201':
+          description: User created successfully
+
+  /api/rentals:
+    get:
+      summary: Get all rentals
+      responses:
+        '200':
+          description: List of rentals
+
+    post:
+      summary: Create rental
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                rentalId:
+                  type: string
+                userId:
+                  type: string
+                movieId:
+                  type: string
+
+      responses:
+        '201':
+          description: Rental created successfully
+
+  /api/rentals/{id}/complete:
+    post:
+      summary: Complete rental
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: Rental completed successfully
+        '404':
+          description: Rental not found
