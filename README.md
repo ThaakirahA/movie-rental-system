@@ -379,6 +379,82 @@ All unit and integration tests are executed automatically through GitHub Actions
 - `PROTECTION.md` – Branch protection justification
 - `/tests` – Automated test suites
 
+---
+
+### 📘 Assignment 14 Documentation
+
+This section prepares the Aura Reels Movie Rental System for open-source collaboration and contributor onboarding.
+
+#### 🤝 Contributing
+
+The repository now includes contribution guidelines to help new contributors understand the development workflow.
+
+📄 [Contributing Guidelines](CONTRIBUTING.md)
+
+#### 🗺 Project Roadmap
+
+Future development plans and enhancement opportunities are documented in the roadmap.
+
+📄 [Project Roadmap](ROADMAP.md)
+
+#### 📄 License
+
+This project uses the MIT License.
+
+📄 [MIT License](LICENSE)
+
+#### 🚀 Getting Started
+
+##### Prerequisites
+
+* Node.js
+* Git
+* Visual Studio Code (recommended)
+
+##### Installation
+
+```bash
+git clone https://github.com/ThaakirahA/movie-rental-system.git
+cd movie-rental-system
+npm install
+```
+
+##### Run Tests
+
+```bash
+npm test
+```
+
+##### Start Development
+
+```bash
+npm start
+```
+
+#### 🌟 Features for Contribution
+
+| Feature                            | Difficulty   | Label            |
+| ---------------------------------- | ------------ | ---------------- |
+| Improve README formatting          | Beginner     | good-first-issue |
+| Swagger documentation improvements | Beginner     | good-first-issue |
+| Movie rating validation            | Beginner     | good-first-issue |
+| Watchlist functionality            | Intermediate | feature-request  |
+| Movie review system                | Intermediate | feature-request  |
+| Email rental notifications         | Advanced     | feature-request  |
+
+#### 👥 Open-Source Collaboration
+
+The repository has been prepared for external contributors through:
+
+* Contribution guidelines
+* Issue labeling
+* Project roadmap
+* CI/CD automation
+* Branch protection rules
+* Pull request workflow
+
+---
+
 
 
 ## 🚀 Future Improvements
