@@ -330,6 +330,57 @@ Swagger URL:
 
 http://localhost:3000/docs
 
+---
+
+### 📘 Assignment 13 Documentation
+
+This section demonstrates the implementation of Continuous Integration and Continuous Deployment (CI/CD) practices using GitHub Actions.
+
+#### 🔒 Branch Protection
+
+Branch protection rules were configured to improve code quality and repository security.
+
+The following rules were applied to the `main` branch:
+
+- Require pull request reviews before merging
+- Require status checks to pass before merging
+- Restrict direct pushes to the main branch
+
+📄 [Branch Protection Documentation](PROTECTION.md)
+
+#### ⚙️ Continuous Integration (CI)
+
+A GitHub Actions workflow was created to automatically run tests whenever code is pushed to the repository or a pull request is opened.
+
+The CI pipeline performs:
+
+- Repository checkout
+- Node.js environment setup
+- Dependency installation
+- Automated test execution using Jest
+
+#### 🚀 Continuous Deployment (CD)
+
+The workflow was extended to generate a release artifact when changes are merged into the main branch.
+
+The CD pipeline performs:
+
+- Build validation after successful tests
+- Artifact generation
+- Artifact upload to GitHub Actions
+
+#### 🧪 Automated Testing
+
+All unit and integration tests are executed automatically through GitHub Actions to ensure code quality before deployment.
+
+#### 📂 Project Structure
+
+- `/.github/workflows` – GitHub Actions workflow configuration
+- `PROTECTION.md` – Branch protection justification
+- `/tests` – Automated test suites
+
+
+
 ## 🚀 Future Improvements
 
 Possible future features include:
